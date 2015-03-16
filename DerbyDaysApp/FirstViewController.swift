@@ -20,6 +20,22 @@ class FirstViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBOutlet var amount_raised: UILabel!
+    
+    override func viewDidAppear(animated: Bool) {
+        var query = PFQuery(className:"Scoreboard")
+        query.getFirstObjectInBackgroundWithBlock {
+            (object: PFObject!, error: NSError!) -> Void in
+            if (error != nil || object == nil) {
+            println("The getFirstObject request failed.")
+            }
+        else {
+            // The find succeeded.
+                println(object.objectForKey("amount_raised"))
+            self.amount_raised.text = object.objectForKey("amount_raised") as? String
+            println("Successfully retrieved the object.")
+        }
+    }
+    }
 }
 
