@@ -25,10 +25,12 @@ class EventsViewControllerTableViewController: UITableViewController {
                 if let objects = objects as? [PFObject] {
                     
                     for object in objects as [PFObject]{
-                        println(object)
+                        
                         eventData.append(object as PFObject)
                     }
                     self.eventList = objects
+                    self.tableView.reloadData()
+                    println(self.eventList)
                     
                 }
             } else {
@@ -66,18 +68,27 @@ class EventsViewControllerTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return self.eventList.count
+        println(self.eventList.count)
+        let count = self.eventList.count as Int
+        return (count)
     }
 
-    /*
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
-
-        // Configure the cell...
-
-        return cell
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath)
+        -> UITableViewCell {
+            let cell = tableView.dequeueReusableCellWithIdentifier("EventCell", forIndexPath: indexPath)
+                as UITableViewCell
+            let event: AnyObject = self.eventList[indexPath.row]
+            cell.textLabel?.text = event.objectForKey("Name") as NSString
+            
+            
+            var dateFormatter: NSDateFormatter = NSDateFormatter()
+            dateFormatter.dateFormat = "MM-dd-yyyy-hh-mm"
+            dateFormatter.timeZone = NSTimeZone(abbreviation: "UTC")
+            let dater = event.objectForKey("Date") as NSDate
+            var someDate = dateFormatter.stringFromDate(dater)
+            cell.detailTextLabel?.text = someDate
+            return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
