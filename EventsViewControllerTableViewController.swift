@@ -92,7 +92,20 @@ class EventsViewControllerTableViewController: UITableViewController {
             cell.detailTextLabel?.text = someDate
             return cell
     }
-
+    override func prepareForSegue(segue: UIStoryboardSegue,
+        sender: AnyObject?) {
+            
+            if segue.identifier == "ShowEventDetails" {
+                let detailViewController = segue.destinationViewController
+                    as EventDetailsViewController
+                println("HIHIHI")
+                let myIndexPath = self.tableView.indexPathForSelectedRow()
+                let row = myIndexPath?.row
+                let event: AnyObject = self.eventList[row!]
+                detailViewController.event_description = event.objectForKey("Description") as NSString
+                detailViewController.event_location = event.objectForKey("Location") as NSString
+            }
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
