@@ -16,8 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
         Parse.setApplicationId("U1bP0YPu2bJV6WfzBvdUldRB8nuRoGEMeyzrDygD", clientKey: "AeIi4piCfkeM191RCGUh5T79c2af31b9Dp7lPVcT")
-        FBLoginView.self
-        FBProfilePictureView.self
         PFFacebookUtils.initializeFacebook()
         return true
     }
