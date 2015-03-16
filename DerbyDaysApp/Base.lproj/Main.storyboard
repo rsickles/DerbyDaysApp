@@ -35,6 +35,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRs-bG-kQu" customClass="MZTimerLabel">
+                                <rect key="frame" x="145" y="323" width="304" height="147"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -45,6 +51,7 @@
                     <tabBarItem key="tabBarItem" title="Scoreboard" image="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="amount_raised" destination="vkJ-Pr-TNu" id="iob-bU-cDH"/>
+                        <outlet property="countdown" destination="bRs-bG-kQu" id="Ove-hg-DSR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>

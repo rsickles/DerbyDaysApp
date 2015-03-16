@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92617CCC1AB69FA200E86A83 /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92617CCB1AB69FA200E86A83 /* MZTimerLabel.m */; };
 		92DDA5181AB12C2200B9368C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DDA5171AB12C2200B9368C /* AppDelegate.swift */; };
 		92DDA51A1AB12C2200B9368C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DDA5191AB12C2200B9368C /* FirstViewController.swift */; };
 		92DDA51C1AB12C2200B9368C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DDA51B1AB12C2200B9368C /* SecondViewController.swift */; };
@@ -46,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		92617CCA1AB69FA200E86A83 /* MZTimerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZTimerLabel.h; sourceTree = "<group>"; };
+		92617CCB1AB69FA200E86A83 /* MZTimerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZTimerLabel.m; sourceTree = "<group>"; };
 		92DDA5121AB12C2200B9368C /* DerbyDaysApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DerbyDaysApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92DDA5161AB12C2200B9368C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92DDA5171AB12C2200B9368C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +152,8 @@
 			isa = PBXGroup;
 			children = (
 				92DDA5591AB12D7E00B9368C /* bridgingheader.m */,
+				92617CCA1AB69FA200E86A83 /* MZTimerLabel.h */,
+				92617CCB1AB69FA200E86A83 /* MZTimerLabel.m */,
 				92DDA5581AB12D7E00B9368C /* DerbyDaysApp-Bridging-Header.h */,
 				92DDA5171AB12C2200B9368C /* AppDelegate.swift */,
 				92DDA5611AB1B87700B9368C /* LoginViewController.swift */,
@@ -300,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92DDA51C1AB12C2200B9368C /* SecondViewController.swift in Sources */,
+				92617CCC1AB69FA200E86A83 /* MZTimerLabel.m in Sources */,
 				92DDA5181AB12C2200B9368C /* AppDelegate.swift in Sources */,
 				92DDA55A1AB12D7E00B9368C /* bridgingheader.m in Sources */,
 				92DDA5621AB1B87700B9368C /* LoginViewController.swift in Sources */,

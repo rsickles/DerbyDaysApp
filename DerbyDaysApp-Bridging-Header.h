@@ -4,4 +4,5 @@
 
 #import <Parse/Parse.h>
 #import <FacebookSDK/FacebookSDK.h>
+#import "MZTimerLabel.h"
 #import <ParseFacebookUtils/PFFacebookUtils.h>

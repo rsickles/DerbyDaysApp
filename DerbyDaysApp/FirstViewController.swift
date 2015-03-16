@@ -13,6 +13,15 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        var dateString = "2015-04-04" // change to your date format
+        var dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "YYYY-MM-dd"
+        
+        var someDate = dateFormatter.dateFromString(dateString)
+
+        //self.countdown.setCountDownToDate(someDate)
+        self.countdown.setCountDownTime(60)
+        self.countdown.start()
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,6 +30,8 @@ class FirstViewController: UIViewController {
     }
 
     @IBOutlet var amount_raised: UILabel!
+    
+    @IBOutlet var countdown: MZTimerLabel!
     
     override func viewDidAppear(animated: Bool) {
         var query = PFQuery(className:"Scoreboard")
