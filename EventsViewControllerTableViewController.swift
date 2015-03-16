@@ -82,12 +82,11 @@ class EventsViewControllerTableViewController: UITableViewController {
             
             
             
-            
             var dateFormatter: NSDateFormatter = NSDateFormatter()
             dateFormatter.dateFormat = "MM-dd-yyyy-hh-mm"
             dateFormatter.timeZone = NSTimeZone(abbreviation: "UTC")
             dateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle
-            dateFormatter.timeStyle = NSDateFormatterStyle.NoStyle
+            dateFormatter.timeStyle = NSDateFormatterStyle.ShortStyle
             let dater = event.objectForKey("Date") as NSDate
             var someDate = dateFormatter.stringFromDate(dater)
             cell.detailTextLabel?.text = someDate
