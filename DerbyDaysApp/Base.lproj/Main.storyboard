@@ -41,6 +41,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDu-ga-W9T">
+                                <rect key="frame" x="180" y="478" width="249" height="30"/>
+                                <state key="normal" title="Donate With Venmo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -170,10 +176,20 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDH-hH-TH1">
+                                <rect key="frame" x="35" y="499" width="231" height="30"/>
+                                <state key="normal" title="I am attending!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="attending:" destination="5cm-pB-eE4" eventType="touchUpInside" id="FVe-sn-s2f"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="attending_button" destination="zDH-hH-TH1" id="TBG-jc-SKR"/>
                         <outlet property="description_info" destination="uN8-al-vCd" id="8es-RK-Jpb"/>
                         <outlet property="location_info" destination="x5r-KA-zT7" id="Jh6-uq-2Mt"/>
                     </connections>

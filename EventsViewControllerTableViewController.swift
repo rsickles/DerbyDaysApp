@@ -104,6 +104,7 @@ class EventsViewControllerTableViewController: UITableViewController {
                 let event: AnyObject = self.eventList[row!]
                 detailViewController.event_description = event.objectForKey("Description") as NSString
                 detailViewController.event_location = event.objectForKey("Location") as NSString
+                detailViewController.event_id = event.objectId as NSString
             }
     }
     /*
