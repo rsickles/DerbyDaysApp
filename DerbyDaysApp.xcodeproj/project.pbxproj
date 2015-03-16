@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		92617CCC1AB69FA200E86A83 /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92617CCB1AB69FA200E86A83 /* MZTimerLabel.m */; };
+		92617CCE1AB74FBD00E86A83 /* EventsViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92617CCD1AB74FBD00E86A83 /* EventsViewControllerTableViewController.swift */; };
 		92DDA5181AB12C2200B9368C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DDA5171AB12C2200B9368C /* AppDelegate.swift */; };
 		92DDA51A1AB12C2200B9368C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DDA5191AB12C2200B9368C /* FirstViewController.swift */; };
-		92DDA51C1AB12C2200B9368C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DDA51B1AB12C2200B9368C /* SecondViewController.swift */; };
 		92DDA51F1AB12C2200B9368C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92DDA51D1AB12C2200B9368C /* Main.storyboard */; };
 		92DDA5211AB12C2200B9368C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92DDA5201AB12C2200B9368C /* Images.xcassets */; };
 		92DDA5241AB12C2200B9368C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92DDA5221AB12C2200B9368C /* LaunchScreen.xib */; };
@@ -49,11 +49,11 @@
 /* Begin PBXFileReference section */
 		92617CCA1AB69FA200E86A83 /* MZTimerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZTimerLabel.h; sourceTree = "<group>"; };
 		92617CCB1AB69FA200E86A83 /* MZTimerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZTimerLabel.m; sourceTree = "<group>"; };
+		92617CCD1AB74FBD00E86A83 /* EventsViewControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventsViewControllerTableViewController.swift; path = ../EventsViewControllerTableViewController.swift; sourceTree = "<group>"; };
 		92DDA5121AB12C2200B9368C /* DerbyDaysApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DerbyDaysApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92DDA5161AB12C2200B9368C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92DDA5171AB12C2200B9368C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92DDA5191AB12C2200B9368C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		92DDA51B1AB12C2200B9368C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		92DDA51E1AB12C2200B9368C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92DDA5201AB12C2200B9368C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		92DDA5231AB12C2200B9368C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -156,9 +156,9 @@
 				92617CCB1AB69FA200E86A83 /* MZTimerLabel.m */,
 				92DDA5581AB12D7E00B9368C /* DerbyDaysApp-Bridging-Header.h */,
 				92DDA5171AB12C2200B9368C /* AppDelegate.swift */,
+				92617CCD1AB74FBD00E86A83 /* EventsViewControllerTableViewController.swift */,
 				92DDA5611AB1B87700B9368C /* LoginViewController.swift */,
 				92DDA5191AB12C2200B9368C /* FirstViewController.swift */,
-				92DDA51B1AB12C2200B9368C /* SecondViewController.swift */,
 				92DDA51D1AB12C2200B9368C /* Main.storyboard */,
 				92DDA5201AB12C2200B9368C /* Images.xcassets */,
 				92DDA5221AB12C2200B9368C /* LaunchScreen.xib */,
@@ -304,10 +304,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92DDA51C1AB12C2200B9368C /* SecondViewController.swift in Sources */,
 				92617CCC1AB69FA200E86A83 /* MZTimerLabel.m in Sources */,
 				92DDA5181AB12C2200B9368C /* AppDelegate.swift in Sources */,
 				92DDA55A1AB12D7E00B9368C /* bridgingheader.m in Sources */,
+				92617CCE1AB74FBD00E86A83 /* EventsViewControllerTableViewController.swift in Sources */,
 				92DDA5621AB1B87700B9368C /* LoginViewController.swift in Sources */,
 				92DDA51A1AB12C2200B9368C /* FirstViewController.swift in Sources */,
 			);
