@@ -14,6 +14,25 @@
 		92DDA5211AB12C2200B9368C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92DDA5201AB12C2200B9368C /* Images.xcassets */; };
 		92DDA5241AB12C2200B9368C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92DDA5221AB12C2200B9368C /* LaunchScreen.xib */; };
 		92DDA5301AB12C2200B9368C /* DerbyDaysAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DDA52F1AB12C2200B9368C /* DerbyDaysAppTests.swift */; };
+		92DDA53A1AB12C5800B9368C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DDA5391AB12C5800B9368C /* AudioToolbox.framework */; };
+		92DDA53C1AB12C6000B9368C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DDA53B1AB12C6000B9368C /* Foundation.framework */; };
+		92DDA53E1AB12C6700B9368C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DDA53D1AB12C6700B9368C /* CoreGraphics.framework */; };
+		92DDA5401AB12C6D00B9368C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DDA53F1AB12C6D00B9368C /* CoreLocation.framework */; };
+		92DDA5421AB12C7600B9368C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DDA5411AB12C7600B9368C /* libz.dylib */; };
+		92DDA5441AB12C7C00B9368C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DDA5431AB12C7C00B9368C /* MobileCoreServices.framework */; };
+		92DDA5461AB12C8300B9368C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DDA5451AB12C8300B9368C /* QuartzCore.framework */; };
+		92DDA5481AB12C8800B9368C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DDA5471AB12C8800B9368C /* Security.framework */; };
+		92DDA54A1AB12C8E00B9368C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DDA5491AB12C8E00B9368C /* StoreKit.framework */; };
+		92DDA54C1AB12C9600B9368C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DDA54B1AB12C9600B9368C /* SystemConfiguration.framework */; };
+		92DDA55A1AB12D7E00B9368C /* bridgingheader.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DDA5591AB12D7E00B9368C /* bridgingheader.m */; };
+		92DDA55C1AB1318800B9368C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DDA55B1AB1318800B9368C /* libsqlite3.dylib */; };
+		92DDA55E1AB1331400B9368C /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DDA55D1AB1331400B9368C /* FacebookSDK.framework */; };
+		92DDA5621AB1B87700B9368C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DDA5611AB1B87700B9368C /* LoginViewController.swift */; };
+		92DDA5711AB1C06400B9368C /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DDA56C1AB1C06400B9368C /* Bolts.framework */; };
+		92DDA5721AB1C06400B9368C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DDA56D1AB1C06400B9368C /* Parse.framework */; };
+		92DDA5731AB1C06400B9368C /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DDA56E1AB1C06400B9368C /* ParseCrashReporting.framework */; };
+		92DDA5741AB1C06400B9368C /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DDA56F1AB1C06400B9368C /* ParseFacebookUtils.framework */; };
+		92DDA5751AB1C06400B9368C /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DDA5701AB1C06400B9368C /* ParseUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +57,26 @@
 		92DDA5291AB12C2200B9368C /* DerbyDaysAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DerbyDaysAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92DDA52E1AB12C2200B9368C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92DDA52F1AB12C2200B9368C /* DerbyDaysAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DerbyDaysAppTests.swift; sourceTree = "<group>"; };
+		92DDA5391AB12C5800B9368C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		92DDA53B1AB12C6000B9368C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		92DDA53D1AB12C6700B9368C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		92DDA53F1AB12C6D00B9368C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		92DDA5411AB12C7600B9368C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		92DDA5431AB12C7C00B9368C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		92DDA5451AB12C8300B9368C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		92DDA5471AB12C8800B9368C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		92DDA5491AB12C8E00B9368C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		92DDA54B1AB12C9600B9368C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		92DDA5581AB12D7E00B9368C /* DerbyDaysApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DerbyDaysApp-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		92DDA5591AB12D7E00B9368C /* bridgingheader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = bridgingheader.m; path = ../bridgingheader.m; sourceTree = "<group>"; };
+		92DDA55B1AB1318800B9368C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		92DDA55D1AB1331400B9368C /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		92DDA5611AB1B87700B9368C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
+		92DDA56C1AB1C06400B9368C /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		92DDA56D1AB1C06400B9368C /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		92DDA56E1AB1C06400B9368C /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		92DDA56F1AB1C06400B9368C /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		92DDA5701AB1C06400B9368C /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +84,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92DDA55C1AB1318800B9368C /* libsqlite3.dylib in Frameworks */,
+				92DDA5731AB1C06400B9368C /* ParseCrashReporting.framework in Frameworks */,
+				92DDA54C1AB12C9600B9368C /* SystemConfiguration.framework in Frameworks */,
+				92DDA54A1AB12C8E00B9368C /* StoreKit.framework in Frameworks */,
+				92DDA5481AB12C8800B9368C /* Security.framework in Frameworks */,
+				92DDA5461AB12C8300B9368C /* QuartzCore.framework in Frameworks */,
+				92DDA5441AB12C7C00B9368C /* MobileCoreServices.framework in Frameworks */,
+				92DDA5421AB12C7600B9368C /* libz.dylib in Frameworks */,
+				92DDA5711AB1C06400B9368C /* Bolts.framework in Frameworks */,
+				92DDA5751AB1C06400B9368C /* ParseUI.framework in Frameworks */,
+				92DDA55E1AB1331400B9368C /* FacebookSDK.framework in Frameworks */,
+				92DDA5401AB12C6D00B9368C /* CoreLocation.framework in Frameworks */,
+				92DDA5721AB1C06400B9368C /* Parse.framework in Frameworks */,
+				92DDA53E1AB12C6700B9368C /* CoreGraphics.framework in Frameworks */,
+				92DDA53C1AB12C6000B9368C /* Foundation.framework in Frameworks */,
+				92DDA5741AB1C06400B9368C /* ParseFacebookUtils.framework in Frameworks */,
+				92DDA53A1AB12C5800B9368C /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +117,19 @@
 		92DDA5091AB12C2200B9368C = {
 			isa = PBXGroup;
 			children = (
+				92DDA56B1AB1C06400B9368C /* parse-library-1.6.3 */,
+				92DDA55D1AB1331400B9368C /* FacebookSDK.framework */,
+				92DDA55B1AB1318800B9368C /* libsqlite3.dylib */,
+				92DDA54B1AB12C9600B9368C /* SystemConfiguration.framework */,
+				92DDA5491AB12C8E00B9368C /* StoreKit.framework */,
+				92DDA5471AB12C8800B9368C /* Security.framework */,
+				92DDA5451AB12C8300B9368C /* QuartzCore.framework */,
+				92DDA5431AB12C7C00B9368C /* MobileCoreServices.framework */,
+				92DDA5411AB12C7600B9368C /* libz.dylib */,
+				92DDA53F1AB12C6D00B9368C /* CoreLocation.framework */,
+				92DDA53D1AB12C6700B9368C /* CoreGraphics.framework */,
+				92DDA53B1AB12C6000B9368C /* Foundation.framework */,
+				92DDA5391AB12C5800B9368C /* AudioToolbox.framework */,
 				92DDA5141AB12C2200B9368C /* DerbyDaysApp */,
 				92DDA52C1AB12C2200B9368C /* DerbyDaysAppTests */,
 				92DDA5131AB12C2200B9368C /* Products */,
@@ -79,7 +148,10 @@
 		92DDA5141AB12C2200B9368C /* DerbyDaysApp */ = {
 			isa = PBXGroup;
 			children = (
+				92DDA5591AB12D7E00B9368C /* bridgingheader.m */,
+				92DDA5581AB12D7E00B9368C /* DerbyDaysApp-Bridging-Header.h */,
 				92DDA5171AB12C2200B9368C /* AppDelegate.swift */,
+				92DDA5611AB1B87700B9368C /* LoginViewController.swift */,
 				92DDA5191AB12C2200B9368C /* FirstViewController.swift */,
 				92DDA51B1AB12C2200B9368C /* SecondViewController.swift */,
 				92DDA51D1AB12C2200B9368C /* Main.storyboard */,
@@ -113,6 +185,18 @@
 				92DDA52E1AB12C2200B9368C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		92DDA56B1AB1C06400B9368C /* parse-library-1.6.3 */ = {
+			isa = PBXGroup;
+			children = (
+				92DDA56C1AB1C06400B9368C /* Bolts.framework */,
+				92DDA56D1AB1C06400B9368C /* Parse.framework */,
+				92DDA56E1AB1C06400B9368C /* ParseCrashReporting.framework */,
+				92DDA56F1AB1C06400B9368C /* ParseFacebookUtils.framework */,
+				92DDA5701AB1C06400B9368C /* ParseUI.framework */,
+			);
+			path = "parse-library-1.6.3";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +301,8 @@
 			files = (
 				92DDA51C1AB12C2200B9368C /* SecondViewController.swift in Sources */,
 				92DDA5181AB12C2200B9368C /* AppDelegate.swift in Sources */,
+				92DDA55A1AB12D7E00B9368C /* bridgingheader.m in Sources */,
+				92DDA5621AB1B87700B9368C /* LoginViewController.swift in Sources */,
 				92DDA51A1AB12C2200B9368C /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,9 +426,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Hova/Documents/FacebookSDK,
+					"$(PROJECT_DIR)/parse-library-1.6.3",
+				);
 				INFOPLIST_FILE = DerbyDaysApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DerbyDaysApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -350,9 +444,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Hova/Documents/FacebookSDK,
+					"$(PROJECT_DIR)/parse-library-1.6.3",
+				);
 				INFOPLIST_FILE = DerbyDaysApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DerbyDaysApp-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -409,6 +510,7 @@
 				92DDA5351AB12C2200B9368C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		92DDA5361AB12C2200B9368C /* Build configuration list for PBXNativeTarget "DerbyDaysAppTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +519,7 @@
 				92DDA5381AB12C2200B9368C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
