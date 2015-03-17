@@ -9,22 +9,22 @@
 import UIKit
 
 class SocialFeedViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         // Get user profile pic
         var fbSession = PFFacebookUtils.session()
         var accessToken = fbSession.accessTokenData.accessToken
         let url = NSURL(string: "https://graph.facebook.com/me/picture?type=large&return_ssl_resources=1&access_token="+accessToken)
         let urlRequest = NSURLRequest(URL: url!)
-        
+        var photos = [UIImage]()
         NSURLConnection.sendAsynchronousRequest(urlRequest, queue: NSOperationQueue.mainQueue()) { (response:NSURLResponse!, data:NSData!, error:NSError!) -> Void in
             
             // Display the image
             let image = UIImage(data: data)
             self.facebookfeed.image = image
+            photos.append(image!)
+            println(photos)
             
         }
     }
