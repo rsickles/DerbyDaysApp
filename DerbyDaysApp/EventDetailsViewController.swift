@@ -25,6 +25,10 @@ class EventDetailsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(animated: Bool) {
+ 
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -36,7 +40,7 @@ class EventDetailsViewController: UIViewController {
     @IBAction func attending(sender: UIButton) {
         var query = PFQuery(className:"Events")
         println(sender.titleLabel)
-        if(sender.titleLabel?.text == "I am attending!") {
+        if(self.attending_button.titleLabel?.text == "I am attending!") {
             sender.setTitle("I am no longer attending :(", forState: UIControlState.Normal)
             query.getObjectInBackgroundWithId(self.event_id) {
                 (event: PFObject!, error: NSError!) -> Void in
