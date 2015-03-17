@@ -518,6 +518,22 @@
 				INFOPLIST_FILE = DerbyDaysApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Pods-CMDQueryStringSerialization\"",
+					"-l\"Pods-SSKeychain\"",
+					"-l\"Pods-VENCore\"",
+					"-l\"Pods-Venmo-iOS-SDK\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"Security\"",
+					"-force_load",
+					"$(BUILT_PRODUCTS_DIR)/libPods-Venmo-iOS-SDK.a",
+					"-force_load",
+					"$(BUILT_PRODUCTS_DIR)/libPods-VENCore.a",
+				);
 				"OTHER_LDFLAGS[arch=*]" = (
 					"$(inherited)",
 					"-ObjC",
@@ -552,6 +568,22 @@
 				INFOPLIST_FILE = DerbyDaysApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Pods-CMDQueryStringSerialization\"",
+					"-l\"Pods-SSKeychain\"",
+					"-l\"Pods-VENCore\"",
+					"-l\"Pods-Venmo-iOS-SDK\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"Security\"",
+					"-force_load",
+					"$(BUILT_PRODUCTS_DIR)/libPods-Venmo-iOS-SDK.a",
+					"-force_load",
+					"$(BUILT_PRODUCTS_DIR)/libPods-VENCore.a",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DerbyDaysApp-Bridging-Header.h";
 			};

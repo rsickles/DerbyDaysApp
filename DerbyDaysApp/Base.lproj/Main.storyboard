@@ -4,6 +4,44 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
+        <!--Sigma Chi-->
+        <scene sceneID="eSJ-nU-Pii">
+            <objects>
+                <viewController id="P3A-B7-h4B" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="S6Z-9V-6mA"/>
+                        <viewControllerLayoutGuide type="bottom" id="uAV-cU-8Ta"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4AU-wk-jjz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Sigma Chi" id="s1b-Bz-a8k"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TD4-dS-kGC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="1221"/>
+        </scene>
+        <!--Social Feed-->
+        <scene sceneID="qzX-q3-e5s">
+            <objects>
+                <viewController id="Mat-ek-FaR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sx1-JW-k5k"/>
+                        <viewControllerLayoutGuide type="bottom" id="RLS-dG-cZ6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Re-EI-72I">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Social Feed" id="BFD-0I-4CR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SxG-Rt-RLK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="-1027"/>
+        </scene>
         <!--Scoreboard-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
@@ -211,11 +249,13 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="kJy-PD-CRY" kind="relationship" relationship="viewControllers" id="df6-7O-Xvr"/>
+                        <segue destination="Mat-ek-FaR" kind="relationship" relationship="viewControllers" id="GeR-yQ-71f"/>
+                        <segue destination="P3A-B7-h4B" kind="relationship" relationship="viewControllers" id="Bzv-a8-i86"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-4" y="134"/>
         </scene>
         <!--Events-->
         <scene sceneID="Kxx-24-cqJ">

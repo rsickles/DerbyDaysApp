@@ -14,7 +14,6 @@ class EventsViewControllerTableViewController: UITableViewController {
     
 
     func getallEvents() {
-        var eventData = [PFObject]()
         var query = PFQuery(className:"Events")
         query.findObjectsInBackgroundWithBlock {
             (objects: [AnyObject]!, error: NSError!) -> Void in
@@ -23,15 +22,8 @@ class EventsViewControllerTableViewController: UITableViewController {
                 println("Successfully retrieved \(objects.count) scores.")
                 // Do something with the found objects
                 if let objects = objects as? [PFObject] {
-                    
-                    for object in objects as [PFObject]{
-                        
-                        eventData.append(object as PFObject)
-                    }
                     self.eventList = objects
                     self.tableView.reloadData()
-                    println(self.eventList)
-                    
                 }
             } else {
                 // Log details of the failure
