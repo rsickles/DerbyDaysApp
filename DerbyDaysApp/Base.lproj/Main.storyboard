@@ -26,7 +26,7 @@
         <!--Social Feed-->
         <scene sceneID="qzX-q3-e5s">
             <objects>
-                <viewController id="Mat-ek-FaR" sceneMemberID="viewController">
+                <viewController id="Mat-ek-FaR" customClass="SocialFeedViewController" customModule="DerbyDaysApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Sx1-JW-k5k"/>
                         <viewControllerLayoutGuide type="bottom" id="RLS-dG-cZ6"/>
@@ -34,9 +34,17 @@
                     <view key="view" contentMode="scaleToFill" id="2Re-EI-72I">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z7x-Cn-P6b">
+                                <rect key="frame" x="37" y="69" width="390" height="316"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Social Feed" id="BFD-0I-4CR"/>
+                    <connections>
+                        <outlet property="facebookfeed" destination="z7x-Cn-P6b" id="lKl-Mb-hwH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SxG-Rt-RLK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
