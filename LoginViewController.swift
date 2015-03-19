@@ -30,7 +30,6 @@ class LoginViewController: UIViewController,FBLoginViewDelegate {
         } else {
             // Show the signup or login screen
             println("not logged in")
-            selectOrg()
         }
     }
 
