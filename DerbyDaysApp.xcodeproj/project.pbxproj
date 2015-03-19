@@ -15,6 +15,7 @@
 		926B466F1AB7DB0F004BEF80 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926B466E1AB7DB0F004BEF80 /* Accounts.framework */; };
 		926B46711AB7DB77004BEF80 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 926B46701AB7DB77004BEF80 /* libstdc++.6.dylib */; };
 		926B46731AB7E21B004BEF80 /* SocialFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926B46721AB7E21B004BEF80 /* SocialFeedViewController.swift */; };
+		926B467B1ABB5E57004BEF80 /* OrgTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926B467A1ABB5E57004BEF80 /* OrgTableViewController.swift */; };
 		92DDA5181AB12C2200B9368C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DDA5171AB12C2200B9368C /* AppDelegate.swift */; };
 		92DDA51A1AB12C2200B9368C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DDA5191AB12C2200B9368C /* FirstViewController.swift */; };
 		92DDA51F1AB12C2200B9368C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92DDA51D1AB12C2200B9368C /* Main.storyboard */; };
@@ -64,6 +65,7 @@
 		926B466E1AB7DB0F004BEF80 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		926B46701AB7DB77004BEF80 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
 		926B46721AB7E21B004BEF80 /* SocialFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialFeedViewController.swift; sourceTree = "<group>"; };
+		926B467A1ABB5E57004BEF80 /* OrgTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrgTableViewController.swift; sourceTree = "<group>"; };
 		92DDA5121AB12C2200B9368C /* DerbyDaysApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DerbyDaysApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92DDA5161AB12C2200B9368C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92DDA5171AB12C2200B9368C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				92DDA5201AB12C2200B9368C /* Images.xcassets */,
 				92DDA5221AB12C2200B9368C /* LaunchScreen.xib */,
 				92DDA5151AB12C2200B9368C /* Supporting Files */,
+				926B467A1ABB5E57004BEF80 /* OrgTableViewController.swift */,
 			);
 			path = DerbyDaysApp;
 			sourceTree = "<group>";
@@ -388,6 +391,7 @@
 				92617CCE1AB74FBD00E86A83 /* EventsViewControllerTableViewController.swift in Sources */,
 				92DDA5621AB1B87700B9368C /* LoginViewController.swift in Sources */,
 				92DDA51A1AB12C2200B9368C /* FirstViewController.swift in Sources */,
+				926B467B1ABB5E57004BEF80 /* OrgTableViewController.swift in Sources */,
 				926B46731AB7E21B004BEF80 /* SocialFeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

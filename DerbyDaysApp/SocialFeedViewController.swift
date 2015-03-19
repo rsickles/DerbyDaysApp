@@ -17,14 +17,13 @@ class SocialFeedViewController: UIViewController {
         var accessToken = fbSession.accessTokenData.accessToken
         let url = NSURL(string: "https://graph.facebook.com/me/picture?type=large&return_ssl_resources=1&access_token="+accessToken)
         let urlRequest = NSURLRequest(URL: url!)
-        var photos = [UIImage]()
+        var photos = [MWPhoto]()
         NSURLConnection.sendAsynchronousRequest(urlRequest, queue: NSOperationQueue.mainQueue()) { (response:NSURLResponse!, data:NSData!, error:NSError!) -> Void in
             
             // Display the image
             let image = UIImage(data: data)
             self.facebookfeed.image = image
-            photos.append(image!)
-            println(photos)
+            //photos.append(image! as MWPhoto)
             
         }
     }
@@ -35,6 +34,48 @@ class SocialFeedViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    //MWPhotoBrowserDelegate
+    
+    //func numberOfPhotosInPhotoBrowser() -> NSString
+    
+//    - (NSUInteger)numberOfPhotosInPhotoBrowser:(MWPhotoBrowser *)photoBrowser {
+//    return _photos.count;
+//    }
+//    
+//    - (id <MWPhoto>)photoBrowser:(MWPhotoBrowser *)photoBrowser photoAtIndex:(NSUInteger)index {
+//    if (index < _photos.count)
+//    return [_photos objectAtIndex:index];
+//    return nil;
+//    }
+//    
+//    - (id <MWPhoto>)photoBrowser:(MWPhotoBrowser *)photoBrowser thumbPhotoAtIndex:(NSUInteger)index {
+//    if (index < _thumbs.count)
+//    return [_thumbs objectAtIndex:index];
+//    return nil;
+//    }
+//    
+//    
+//    - (void)photoBrowser:(MWPhotoBrowser *)photoBrowser didDisplayPhotoAtIndex:(NSUInteger)index {
+//    NSLog(@"Did start viewing photo at index %lu", (unsigned long)index);
+//    }
+//    
+//    - (BOOL)photoBrowser:(MWPhotoBrowser *)photoBrowser isPhotoSelectedAtIndex:(NSUInteger)index {
+//    return [[_selections objectAtIndex:index] boolValue];
+//    }
+//    
+//    
+//    - (void)photoBrowser:(MWPhotoBrowser *)photoBrowser photoAtIndex:(NSUInteger)index selectedChanged:(BOOL)selected {
+//    [_selections replaceObjectAtIndex:index withObject:[NSNumber numberWithBool:selected]];
+//    NSLog(@"Photo at index %lu selected %@", (unsigned long)index, selected ? @"YES" : @"NO");
+//    }
+//    
+//    - (void)photoBrowserDidFinishModalPresentation:(MWPhotoBrowser *)photoBrowser {
+//    // If we subscribe to this method we must dismiss the view controller ourselves
+//    NSLog(@"Did finish modal presentation");
+//    [self dismissViewControllerAnimated:YES completion:nil];
+//    }
+//    
 
     /*
     // MARK: - Navigation

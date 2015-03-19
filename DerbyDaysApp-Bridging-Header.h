@@ -6,3 +6,4 @@
 #import <FacebookSDK/FacebookSDK.h>
 #import "MZTimerLabel.h"
 #import <ParseFacebookUtils/PFFacebookUtils.h>
+#import "MWPhotoBrowser.h"
