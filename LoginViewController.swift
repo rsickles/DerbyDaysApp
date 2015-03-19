@@ -30,6 +30,7 @@ class LoginViewController: UIViewController,FBLoginViewDelegate {
         } else {
             // Show the signup or login screen
             println("not logged in")
+            selectOrg()
         }
     }
 
@@ -43,7 +44,7 @@ class LoginViewController: UIViewController,FBLoginViewDelegate {
                     self.goToHome()
                 } else {
                     println("User logged in through Facebook!")
-                    self.goToHome()
+                    self.selectOrg()
                 }
             } else {
                 println("Uh oh. The user cancelled the Facebook login.")
@@ -53,8 +54,12 @@ class LoginViewController: UIViewController,FBLoginViewDelegate {
     }
     @IBOutlet var login: UIButton!
     
-    func goToHome(){
+    func selectOrg(){
         let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("org_select")
+        self.presentViewController(vc as UIViewController, animated: true, completion: nil)
+    }
+    func goToHome(){
+        let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("Home")
         self.presentViewController(vc as UIViewController, animated: true, completion: nil)
     }
 }

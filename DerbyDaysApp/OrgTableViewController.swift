@@ -10,8 +10,9 @@ import UIKit
 
 class OrgTableViewController: UITableViewController {
     
-    var orgs: [String] = ["Sigma Chi", "Delta Gamma", "Delta Delta Delta"]
+    var orgs: [String] = ["Sigma Chi", "Delta Gamma", "Kappa Kappa Gamma", "Delta Delta Delta", "Other"]
     var lastSelectedIndexPath:NSIndexPath?
+    var org_selected: String?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Uncomment the following line to preserve selection between presentations
@@ -29,11 +30,45 @@ class OrgTableViewController: UITableViewController {
 
     @IBAction func done(sender: UIBarButtonItem) {
         println("Finished Selecting organization")
+        println(lastSelectedIndexPath)
+            if(self.lastSelectedIndexPath != nil) {
+        var currentUser = PFUser.currentUser().objectId
+        var query = PFQuery(className:"_User")
+        query.getObjectInBackgroundWithId(currentUser) {
+            (user: PFObject!, error: NSError!) -> Void in
+            if error != nil {
+                println(error)
+            } else {
+                user["organization"] = self.org_selected
+                user.saveEventually({ (bool:Bool, error:NSError!) -> Void in
+                    if bool == true {
+                        println("Saved")
+                    }
+                })
+            }
+        }
         let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("Home")
         self.presentViewController(vc as UIViewController, animated: true, completion: nil)
+        }
+        else {
+            //display error that must select organization
+            self.displayAlert()
+        }
     }
     // MARK: - Table view data source
 
+    func displayAlert(){
+        let title = "No Organization Selected"
+        let message = "Please Select An Organization!"
+        let OkText = "OK"
+        println("HELLO")
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
+        let alertaction = UIAlertAction(title: OkText, style: UIAlertActionStyle.Cancel, handler: nil)
+        alert.addAction(alertaction)
+        presentViewController(alert, animated: true, completion: nil)
+    }
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
@@ -51,7 +86,7 @@ class OrgTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
         cell.accessoryType = (self.lastSelectedIndexPath?.row == indexPath.row) ? .Checkmark : .None
         cell.textLabel?.text = self.orgs[indexPath.row]
-
+        self.org_selected = self.orgs[indexPath.row]
         return cell
     }
     
