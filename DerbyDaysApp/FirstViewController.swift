@@ -18,19 +18,13 @@ class FirstViewController: UIViewController {
         dateFormatter.dateFormat = "YYYY-MM-dd"
         
         var someDate = dateFormatter.dateFromString(dateString)
-//        MZTimerLabel *timer = [[MZTimerLabel alloc] initWithLabel:aUILabel andTimerType:MZTimerLabelTypeTimer];
-//        [timer setCountDownTime:60];
-//        [timer start];
-        //MZTimerLabelTypeTimer timer = self.countdown
-       
-
-    }
-    
-    required init(coder aDecoder: NSCoder) {
-        countdown_timer = MZTimerLabelTypeTimer
-        super.init(coder: aDecoder)
-        // ERROR: Cannot assign to the result of this expression
-        //countdown_timer = self.countdown
+        
+        //start timer
+        var timer: MZTimerLabel = MZTimerLabel(label: self.countdown)
+        timer.setCountDownToDate(someDate)
+        timer.timerType = MZTimerLabelTypeTimer
+        self.countdown = timer
+        timer.start()
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,9 +33,8 @@ class FirstViewController: UIViewController {
     }
 
     @IBOutlet var amount_raised: UILabel!
-    private let countdown_timer: MZTimerLabelType
     
-
+    
     @IBOutlet var countdown: UILabel!
 
     

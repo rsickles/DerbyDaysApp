@@ -1452,7 +1452,7 @@
 		FDC986937F6908F520D5D3A4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0610;
 			};
 			buildConfigurationList = 90F438FA8059A972EF3991EA /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1750,7 +1750,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0120A0F468B8FD4C386FB67F /* Pods-SSKeychain-Private.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-SSKeychain/Pods-SSKeychain-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -1806,7 +1805,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CAD8DFB1D58B671AC5C40BC9 /* Pods-PSTCollectionView-Private.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-PSTCollectionView/Pods-PSTCollectionView-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -1823,7 +1821,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0120A0F468B8FD4C386FB67F /* Pods-SSKeychain-Private.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-SSKeychain/Pods-SSKeychain-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -1874,7 +1871,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 50259470C489D74A6213FF01 /* Pods-MBProgressHUD-Private.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-MBProgressHUD/Pods-MBProgressHUD-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -1891,7 +1887,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CF73C7E1DAFEBD07D0C7951B /* Pods-CMDQueryStringSerialization-Private.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-CMDQueryStringSerialization/Pods-CMDQueryStringSerialization-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -1908,7 +1903,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 50259470C489D74A6213FF01 /* Pods-MBProgressHUD-Private.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-MBProgressHUD/Pods-MBProgressHUD-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -1925,7 +1919,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 764525D68CEB3F13A85F177B /* Pods-MWPhotoBrowser-Private.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-MWPhotoBrowser/Pods-MWPhotoBrowser-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -1942,7 +1935,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 90549F88F20C9CF48D0037EC /* Pods.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -1959,7 +1951,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D577F2A3E11F8A12FE81C7D6 /* Pods-DACircularProgress-Private.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-DACircularProgress/Pods-DACircularProgress-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -1976,7 +1967,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E281E3E2888271492D42BC47 /* Pods-VENCore-Private.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-VENCore/Pods-VENCore-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -1993,7 +1983,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CF73C7E1DAFEBD07D0C7951B /* Pods-CMDQueryStringSerialization-Private.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-CMDQueryStringSerialization/Pods-CMDQueryStringSerialization-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -2010,7 +1999,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 43E0C769A172BE84482F913A /* Pods.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -2027,7 +2015,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 30586227715055CF2DCF0432 /* Pods-Venmo-iOS-SDK-Private.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-Venmo-iOS-SDK/Pods-Venmo-iOS-SDK-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -2044,7 +2031,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 500066816F64BACC2B5C40DE /* Pods-SDWebImage-Private.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-SDWebImage/Pods-SDWebImage-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -2061,7 +2047,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CAD8DFB1D58B671AC5C40BC9 /* Pods-PSTCollectionView-Private.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-PSTCollectionView/Pods-PSTCollectionView-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -2078,7 +2063,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D577F2A3E11F8A12FE81C7D6 /* Pods-DACircularProgress-Private.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-DACircularProgress/Pods-DACircularProgress-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -2095,7 +2079,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 500066816F64BACC2B5C40DE /* Pods-SDWebImage-Private.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-SDWebImage/Pods-SDWebImage-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -2112,7 +2095,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E281E3E2888271492D42BC47 /* Pods-VENCore-Private.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-VENCore/Pods-VENCore-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -2129,7 +2111,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 764525D68CEB3F13A85F177B /* Pods-MWPhotoBrowser-Private.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-MWPhotoBrowser/Pods-MWPhotoBrowser-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -2146,7 +2127,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 30586227715055CF2DCF0432 /* Pods-Venmo-iOS-SDK-Private.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-Venmo-iOS-SDK/Pods-Venmo-iOS-SDK-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
