@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3BEEAA0BDC0C5FEDF6CDBE7F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A34B6E8E2DF95DEED5805EE /* libPods.a */; };
-		92617CCC1AB69FA200E86A83 /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92617CCB1AB69FA200E86A83 /* MZTimerLabel.m */; };
 		92617CCE1AB74FBD00E86A83 /* EventsViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92617CCD1AB74FBD00E86A83 /* EventsViewControllerTableViewController.swift */; };
 		92617CD01AB7891100E86A83 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92617CCF1AB7891100E86A83 /* EventDetailsViewController.swift */; };
 		926B466D1AB7DB07004BEF80 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926B466C1AB7DB07004BEF80 /* Social.framework */; };
@@ -17,6 +16,19 @@
 		926B46731AB7E21B004BEF80 /* SocialFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926B46721AB7E21B004BEF80 /* SocialFeedViewController.swift */; };
 		926B467B1ABB5E57004BEF80 /* OrgTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926B467A1ABB5E57004BEF80 /* OrgTableViewController.swift */; };
 		926B467D1ABBAF49004BEF80 /* SigmaChiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926B467C1ABBAF49004BEF80 /* SigmaChiViewController.swift */; };
+		92910B981AC08D9900574DDA /* SVWebViewController.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92910B791AC08D9900574DDA /* SVWebViewController.strings */; };
+		92910B991AC08D9900574DDA /* SVModalWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92910B831AC08D9900574DDA /* SVModalWebViewController.m */; };
+		92910B9A1AC08D9900574DDA /* SVWebViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 92910B841AC08D9900574DDA /* SVWebViewController.bundle */; };
+		92910B9B1AC08D9900574DDA /* SVWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92910B861AC08D9900574DDA /* SVWebViewController.m */; };
+		92910B9C1AC08D9900574DDA /* SVWebViewControllerActivityChrome-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 92910B891AC08D9900574DDA /* SVWebViewControllerActivityChrome-iPad.png */; };
+		92910B9D1AC08D9900574DDA /* SVWebViewControllerActivityChrome-iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 92910B8A1AC08D9900574DDA /* SVWebViewControllerActivityChrome-iPad@2x.png */; };
+		92910B9E1AC08D9900574DDA /* SVWebViewControllerActivityChrome.m in Sources */ = {isa = PBXBuildFile; fileRef = 92910B8C1AC08D9900574DDA /* SVWebViewControllerActivityChrome.m */; };
+		92910B9F1AC08D9900574DDA /* SVWebViewControllerActivityChrome@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 92910B8D1AC08D9900574DDA /* SVWebViewControllerActivityChrome@2x.png */; };
+		92910BA01AC08D9900574DDA /* SVWebViewControllerActivitySafari-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 92910B8F1AC08D9900574DDA /* SVWebViewControllerActivitySafari-iPad.png */; };
+		92910BA11AC08D9900574DDA /* SVWebViewControllerActivitySafari-iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 92910B901AC08D9900574DDA /* SVWebViewControllerActivitySafari-iPad@2x.png */; };
+		92910BA21AC08D9900574DDA /* SVWebViewControllerActivitySafari.m in Sources */ = {isa = PBXBuildFile; fileRef = 92910B921AC08D9900574DDA /* SVWebViewControllerActivitySafari.m */; };
+		92910BA31AC08D9900574DDA /* SVWebViewControllerActivitySafari@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 92910B931AC08D9900574DDA /* SVWebViewControllerActivitySafari@2x.png */; };
+		92910BA41AC08D9900574DDA /* SVWebViewControllerActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 92910B951AC08D9900574DDA /* SVWebViewControllerActivity.m */; };
 		92DDA5181AB12C2200B9368C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DDA5171AB12C2200B9368C /* AppDelegate.swift */; };
 		92DDA51A1AB12C2200B9368C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DDA5191AB12C2200B9368C /* FirstViewController.swift */; };
 		92DDA51F1AB12C2200B9368C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92DDA51D1AB12C2200B9368C /* Main.storyboard */; };
@@ -58,8 +70,6 @@
 		0F2F792AC11E50E586E43C64 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		43025E1F86FF36B887E383F4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6A34B6E8E2DF95DEED5805EE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		92617CCA1AB69FA200E86A83 /* MZTimerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZTimerLabel.h; sourceTree = "<group>"; };
-		92617CCB1AB69FA200E86A83 /* MZTimerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZTimerLabel.m; sourceTree = "<group>"; };
 		92617CCD1AB74FBD00E86A83 /* EventsViewControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventsViewControllerTableViewController.swift; path = ../EventsViewControllerTableViewController.swift; sourceTree = "<group>"; };
 		92617CCF1AB7891100E86A83 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
 		926B466C1AB7DB07004BEF80 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
@@ -68,6 +78,33 @@
 		926B46721AB7E21B004BEF80 /* SocialFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialFeedViewController.swift; sourceTree = "<group>"; };
 		926B467A1ABB5E57004BEF80 /* OrgTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrgTableViewController.swift; sourceTree = "<group>"; };
 		926B467C1ABBAF49004BEF80 /* SigmaChiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigmaChiViewController.swift; sourceTree = "<group>"; };
+		92910B7A1AC08D9900574DDA /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/SVWebViewController.strings; sourceTree = "<group>"; };
+		92910B7B1AC08D9900574DDA /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/SVWebViewController.strings; sourceTree = "<group>"; };
+		92910B7C1AC08D9900574DDA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SVWebViewController.strings; sourceTree = "<group>"; };
+		92910B7D1AC08D9900574DDA /* es-ES */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-ES"; path = "es-ES.lproj/SVWebViewController.strings"; sourceTree = "<group>"; };
+		92910B7E1AC08D9900574DDA /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/SVWebViewController.strings; sourceTree = "<group>"; };
+		92910B7F1AC08D9900574DDA /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/SVWebViewController.strings; sourceTree = "<group>"; };
+		92910B801AC08D9900574DDA /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/SVWebViewController.strings; sourceTree = "<group>"; };
+		92910B811AC08D9900574DDA /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/SVWebViewController.strings; sourceTree = "<group>"; };
+		92910B821AC08D9900574DDA /* SVModalWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVModalWebViewController.h; sourceTree = "<group>"; };
+		92910B831AC08D9900574DDA /* SVModalWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVModalWebViewController.m; sourceTree = "<group>"; };
+		92910B841AC08D9900574DDA /* SVWebViewController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVWebViewController.bundle; sourceTree = "<group>"; };
+		92910B851AC08D9900574DDA /* SVWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVWebViewController.h; sourceTree = "<group>"; };
+		92910B861AC08D9900574DDA /* SVWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVWebViewController.m; sourceTree = "<group>"; };
+		92910B891AC08D9900574DDA /* SVWebViewControllerActivityChrome-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SVWebViewControllerActivityChrome-iPad.png"; sourceTree = "<group>"; };
+		92910B8A1AC08D9900574DDA /* SVWebViewControllerActivityChrome-iPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SVWebViewControllerActivityChrome-iPad@2x.png"; sourceTree = "<group>"; };
+		92910B8B1AC08D9900574DDA /* SVWebViewControllerActivityChrome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVWebViewControllerActivityChrome.h; sourceTree = "<group>"; };
+		92910B8C1AC08D9900574DDA /* SVWebViewControllerActivityChrome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVWebViewControllerActivityChrome.m; sourceTree = "<group>"; };
+		92910B8D1AC08D9900574DDA /* SVWebViewControllerActivityChrome@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SVWebViewControllerActivityChrome@2x.png"; sourceTree = "<group>"; };
+		92910B8F1AC08D9900574DDA /* SVWebViewControllerActivitySafari-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SVWebViewControllerActivitySafari-iPad.png"; sourceTree = "<group>"; };
+		92910B901AC08D9900574DDA /* SVWebViewControllerActivitySafari-iPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SVWebViewControllerActivitySafari-iPad@2x.png"; sourceTree = "<group>"; };
+		92910B911AC08D9900574DDA /* SVWebViewControllerActivitySafari.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVWebViewControllerActivitySafari.h; sourceTree = "<group>"; };
+		92910B921AC08D9900574DDA /* SVWebViewControllerActivitySafari.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVWebViewControllerActivitySafari.m; sourceTree = "<group>"; };
+		92910B931AC08D9900574DDA /* SVWebViewControllerActivitySafari@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SVWebViewControllerActivitySafari@2x.png"; sourceTree = "<group>"; };
+		92910B941AC08D9900574DDA /* SVWebViewControllerActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVWebViewControllerActivity.h; sourceTree = "<group>"; };
+		92910B951AC08D9900574DDA /* SVWebViewControllerActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVWebViewControllerActivity.m; sourceTree = "<group>"; };
+		92910B961AC08D9900574DDA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SVWebViewController.strings"; sourceTree = "<group>"; };
+		92910B971AC08D9900574DDA /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/SVWebViewController.strings"; sourceTree = "<group>"; };
 		92DDA5121AB12C2200B9368C /* DerbyDaysApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DerbyDaysApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92DDA5161AB12C2200B9368C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92DDA5171AB12C2200B9368C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -139,9 +176,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		92910B781AC08D9900574DDA /* SVWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				92910B791AC08D9900574DDA /* SVWebViewController.strings */,
+				92910B821AC08D9900574DDA /* SVModalWebViewController.h */,
+				92910B831AC08D9900574DDA /* SVModalWebViewController.m */,
+				92910B841AC08D9900574DDA /* SVWebViewController.bundle */,
+				92910B851AC08D9900574DDA /* SVWebViewController.h */,
+				92910B861AC08D9900574DDA /* SVWebViewController.m */,
+				92910B871AC08D9900574DDA /* UIActivities */,
+			);
+			path = SVWebViewController;
+			sourceTree = "<group>";
+		};
+		92910B871AC08D9900574DDA /* UIActivities */ = {
+			isa = PBXGroup;
+			children = (
+				92910B881AC08D9900574DDA /* Chrome */,
+				92910B8E1AC08D9900574DDA /* Safari */,
+				92910B941AC08D9900574DDA /* SVWebViewControllerActivity.h */,
+				92910B951AC08D9900574DDA /* SVWebViewControllerActivity.m */,
+			);
+			path = UIActivities;
+			sourceTree = "<group>";
+		};
+		92910B881AC08D9900574DDA /* Chrome */ = {
+			isa = PBXGroup;
+			children = (
+				92910B891AC08D9900574DDA /* SVWebViewControllerActivityChrome-iPad.png */,
+				92910B8A1AC08D9900574DDA /* SVWebViewControllerActivityChrome-iPad@2x.png */,
+				92910B8B1AC08D9900574DDA /* SVWebViewControllerActivityChrome.h */,
+				92910B8C1AC08D9900574DDA /* SVWebViewControllerActivityChrome.m */,
+				92910B8D1AC08D9900574DDA /* SVWebViewControllerActivityChrome@2x.png */,
+			);
+			path = Chrome;
+			sourceTree = "<group>";
+		};
+		92910B8E1AC08D9900574DDA /* Safari */ = {
+			isa = PBXGroup;
+			children = (
+				92910B8F1AC08D9900574DDA /* SVWebViewControllerActivitySafari-iPad.png */,
+				92910B901AC08D9900574DDA /* SVWebViewControllerActivitySafari-iPad@2x.png */,
+				92910B911AC08D9900574DDA /* SVWebViewControllerActivitySafari.h */,
+				92910B921AC08D9900574DDA /* SVWebViewControllerActivitySafari.m */,
+				92910B931AC08D9900574DDA /* SVWebViewControllerActivitySafari@2x.png */,
+			);
+			path = Safari;
+			sourceTree = "<group>";
+		};
 		92DDA5091AB12C2200B9368C = {
 			isa = PBXGroup;
 			children = (
+				92910B781AC08D9900574DDA /* SVWebViewController */,
 				92DDA56B1AB1C06400B9368C /* parse-library-1.6.3 */,
 				92DDA55D1AB1331400B9368C /* FacebookSDK.framework */,
 				92DDA55B1AB1318800B9368C /* libsqlite3.dylib */,
@@ -176,8 +263,6 @@
 			isa = PBXGroup;
 			children = (
 				92DDA5591AB12D7E00B9368C /* bridgingheader.m */,
-				92617CCA1AB69FA200E86A83 /* MZTimerLabel.h */,
-				92617CCB1AB69FA200E86A83 /* MZTimerLabel.m */,
 				92DDA5581AB12D7E00B9368C /* DerbyDaysApp-Bridging-Header.h */,
 				92DDA5171AB12C2200B9368C /* AppDelegate.swift */,
 				92617CCD1AB74FBD00E86A83 /* EventsViewControllerTableViewController.swift */,
@@ -187,10 +272,10 @@
 				926B467C1ABBAF49004BEF80 /* SigmaChiViewController.swift */,
 				926B46721AB7E21B004BEF80 /* SocialFeedViewController.swift */,
 				92617CCF1AB7891100E86A83 /* EventDetailsViewController.swift */,
+				926B467A1ABB5E57004BEF80 /* OrgTableViewController.swift */,
 				92DDA5201AB12C2200B9368C /* Images.xcassets */,
 				92DDA5221AB12C2200B9368C /* LaunchScreen.xib */,
 				92DDA5151AB12C2200B9368C /* Supporting Files */,
-				926B467A1ABB5E57004BEF80 /* OrgTableViewController.swift */,
 			);
 			path = DerbyDaysApp;
 			sourceTree = "<group>";
@@ -317,6 +402,15 @@
 			knownRegions = (
 				en,
 				Base,
+				da,
+				de,
+				"es-ES",
+				es,
+				fr,
+				ja,
+				pt,
+				"zh-Hans",
+				"zh-Hant",
 			);
 			mainGroup = 92DDA5091AB12C2200B9368C;
 			productRefGroup = 92DDA5131AB12C2200B9368C /* Products */;
@@ -335,8 +429,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				92DDA51F1AB12C2200B9368C /* Main.storyboard in Resources */,
+				92910B981AC08D9900574DDA /* SVWebViewController.strings in Resources */,
 				92DDA5241AB12C2200B9368C /* LaunchScreen.xib in Resources */,
+				92910B9C1AC08D9900574DDA /* SVWebViewControllerActivityChrome-iPad.png in Resources */,
+				92910BA11AC08D9900574DDA /* SVWebViewControllerActivitySafari-iPad@2x.png in Resources */,
+				92910BA31AC08D9900574DDA /* SVWebViewControllerActivitySafari@2x.png in Resources */,
+				92910B9D1AC08D9900574DDA /* SVWebViewControllerActivityChrome-iPad@2x.png in Resources */,
+				92910B9A1AC08D9900574DDA /* SVWebViewController.bundle in Resources */,
+				92910B9F1AC08D9900574DDA /* SVWebViewControllerActivityChrome@2x.png in Resources */,
 				92DDA5211AB12C2200B9368C /* Images.xcassets in Resources */,
+				92910BA01AC08D9900574DDA /* SVWebViewControllerActivitySafari-iPad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,16 +489,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92617CCC1AB69FA200E86A83 /* MZTimerLabel.m in Sources */,
 				92617CD01AB7891100E86A83 /* EventDetailsViewController.swift in Sources */,
 				92DDA5181AB12C2200B9368C /* AppDelegate.swift in Sources */,
 				92DDA55A1AB12D7E00B9368C /* bridgingheader.m in Sources */,
+				92910B991AC08D9900574DDA /* SVModalWebViewController.m in Sources */,
+				92910BA21AC08D9900574DDA /* SVWebViewControllerActivitySafari.m in Sources */,
 				92617CCE1AB74FBD00E86A83 /* EventsViewControllerTableViewController.swift in Sources */,
 				926B467D1ABBAF49004BEF80 /* SigmaChiViewController.swift in Sources */,
 				92DDA5621AB1B87700B9368C /* LoginViewController.swift in Sources */,
 				92DDA51A1AB12C2200B9368C /* FirstViewController.swift in Sources */,
+				92910BA41AC08D9900574DDA /* SVWebViewControllerActivity.m in Sources */,
+				92910B9B1AC08D9900574DDA /* SVWebViewController.m in Sources */,
 				926B467B1ABB5E57004BEF80 /* OrgTableViewController.swift in Sources */,
 				926B46731AB7E21B004BEF80 /* SocialFeedViewController.swift in Sources */,
+				92910B9E1AC08D9900574DDA /* SVWebViewControllerActivityChrome.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +525,23 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		92910B791AC08D9900574DDA /* SVWebViewController.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92910B7A1AC08D9900574DDA /* da */,
+				92910B7B1AC08D9900574DDA /* de */,
+				92910B7C1AC08D9900574DDA /* en */,
+				92910B7D1AC08D9900574DDA /* es-ES */,
+				92910B7E1AC08D9900574DDA /* es */,
+				92910B7F1AC08D9900574DDA /* fr */,
+				92910B801AC08D9900574DDA /* ja */,
+				92910B811AC08D9900574DDA /* pt */,
+				92910B961AC08D9900574DDA /* zh-Hans */,
+				92910B971AC08D9900574DDA /* zh-Hant */,
+			);
+			name = SVWebViewController.strings;
+			sourceTree = "<group>";
+		};
 		92DDA51D1AB12C2200B9368C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -4,6 +4,6 @@
 
 #import <Parse/Parse.h>
 #import <FacebookSDK/FacebookSDK.h>
-#import "MZTimerLabel.h"
 #import <ParseFacebookUtils/PFFacebookUtils.h>
 #import "MWPhotoBrowser.h"
+#import "SVModalWebViewController.h"

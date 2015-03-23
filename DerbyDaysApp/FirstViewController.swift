@@ -13,20 +13,9 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        var dateString = "2015-04-04" // change to your date format
-        var dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "YYYY-MM-dd"
-        
-        var someDate = dateFormatter.dateFromString(dateString)
-        
-        //start timer
-        var timer: MZTimerLabel = MZTimerLabel(label: self.countdown)
-        timer.setCountDownToDate(someDate)
-        timer.timerType = MZTimerLabelTypeTimer
-        self.countdown = timer
-        timer.start()
     }
-
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -38,6 +27,10 @@ class FirstViewController: UIViewController {
     @IBOutlet var countdown: UILabel!
 
     
+    @IBAction func showDonatePage(sender: UIButton) {
+        let webViewController = SVModalWebViewController(address: "https://www.gofundme.com/cmuderbydays/donate")
+        self.presentViewController(webViewController, animated: true, completion: nil)
+    }
     override func viewDidAppear(animated: Bool) {
         var query = PFQuery(className:"Scoreboard")
         query.getFirstObjectInBackgroundWithBlock {
