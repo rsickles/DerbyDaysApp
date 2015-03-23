@@ -30,7 +30,7 @@ class SocialFeedViewController: UIViewController, MWPhotoBrowserDelegate {
             self.photos.append(newPhoto)
             var browser = MWPhotoBrowser(delegate: self)
             browser.displayActionButton = true; // Show action button to allow sharing, copying, etc (defaults to YES)
-            browser.displayNavArrows = false; // Whether to display left and right nav arrows on toolbar (defaults to NO)
+            browser.displayNavArrows = true; // Whether to display left and right nav arrows on toolbar (defaults to NO)
             browser.displaySelectionButtons = false; // Whether selection buttons are shown on each image (defaults to NO)
             browser.zoomPhotosToFill = true; // Images that almost fill the screen will be initially zoomed to fill (defaults to YES)
             browser.alwaysShowControls = false; // Allows to control whether the bars and controls are always visible or whether they fade away to show the photo full (defaults to NO)
@@ -50,7 +50,6 @@ class SocialFeedViewController: UIViewController, MWPhotoBrowserDelegate {
     
     
     func numberOfPhotosInPhotoBrowser(photoBrowser: MWPhotoBrowser!) -> UInt {
-        
         return UInt(self.photos.count)
     }
     
@@ -60,13 +59,13 @@ class SocialFeedViewController: UIViewController, MWPhotoBrowserDelegate {
         return self.photos[Int(index)]
     }
     
-//
-//    - (id <MWPhoto>)photoBrowser:(MWPhotoBrowser *)photoBrowser thumbPhotoAtIndex:(NSUInteger)index {
-//    if (index < _thumbs.count)
-//    return [_thumbs objectAtIndex:index];
-//    return nil;
-//    }
-//    
+    func photoBrowser(photoBrowser: MWPhotoBrowser!, thumbPhotoAtIndex index: UInt) -> MWPhotoProtocol! {
+        if(index < UInt(self.photos.count)) {
+            return self.photos[Int(index)]
+        }
+        return nil
+    }
+    
 //    
 //    - (void)photoBrowser:(MWPhotoBrowser *)photoBrowser didDisplayPhotoAtIndex:(NSUInteger)index {
 //    NSLog(@"Did start viewing photo at index %lu", (unsigned long)index);
