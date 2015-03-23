@@ -8,7 +8,12 @@
 
 import UIKit
 
-class SocialFeedViewController: UIViewController {
+class SocialFeedViewController: UIViewController, MWPhotoBrowserDelegate {
+    
+    
+    var photos = [MWPhoto]()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -17,38 +22,45 @@ class SocialFeedViewController: UIViewController {
         var accessToken = fbSession.accessTokenData.accessToken
         let url = NSURL(string: "https://graph.facebook.com/me/picture?type=large&return_ssl_resources=1&access_token="+accessToken)
         let urlRequest = NSURLRequest(URL: url!)
-        var photos = [MWPhoto]()
+        
         NSURLConnection.sendAsynchronousRequest(urlRequest, queue: NSOperationQueue.mainQueue()) { (response:NSURLResponse!, data:NSData!, error:NSError!) -> Void in
-            
             // Display the image
-            let image = UIImage(data: data)
-            self.facebookfeed.image = image
-            //photos.append(image! as MWPhoto)
-            
+            let photo = UIImage(data: data)
+            var newPhoto = MWPhoto(image: photo)
+            self.photos.append(newPhoto)
+            var browser = MWPhotoBrowser(delegate: self)
+            browser.displayActionButton = true; // Show action button to allow sharing, copying, etc (defaults to YES)
+            browser.displayNavArrows = false; // Whether to display left and right nav arrows on toolbar (defaults to NO)
+            browser.displaySelectionButtons = false; // Whether selection buttons are shown on each image (defaults to NO)
+            browser.zoomPhotosToFill = true; // Images that almost fill the screen will be initially zoomed to fill (defaults to YES)
+            browser.alwaysShowControls = false; // Allows to control whether the bars and controls are always visible or whether they fade away to show the photo full (defaults to NO)
+            browser.enableGrid = true; // Whether to allow the viewing of all the photo thumbnails on a grid (defaults to YES)
+            browser.startOnGrid = false; // Whether to start on the grid of thumbnails instead of the first photo (defaults to NO)
+            self.presentViewController(browser, animated: true,completion:nil)
         }
     }
 
-    @IBOutlet var facebookfeed: UIImageView!
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     
-    //MWPhotoBrowserDelegate
+//    MWPhotoBrowserDelegate Methods
     
-    //func numberOfPhotosInPhotoBrowser() -> NSString
     
-//    - (NSUInteger)numberOfPhotosInPhotoBrowser:(MWPhotoBrowser *)photoBrowser {
-//    return _photos.count;
-//    }
-//    
-//    - (id <MWPhoto>)photoBrowser:(MWPhotoBrowser *)photoBrowser photoAtIndex:(NSUInteger)index {
-//    if (index < _photos.count)
-//    return [_photos objectAtIndex:index];
-//    return nil;
-//    }
-//    
+    func numberOfPhotosInPhotoBrowser(photoBrowser: MWPhotoBrowser!) -> UInt {
+        
+        return UInt(self.photos.count)
+    }
+    
+    
+    func photoBrowser(photoBrowser: MWPhotoBrowser!, photoAtIndex index: UInt) -> MWPhotoProtocol! {
+        
+        return self.photos[Int(index)]
+    }
+    
+//
 //    - (id <MWPhoto>)photoBrowser:(MWPhotoBrowser *)photoBrowser thumbPhotoAtIndex:(NSUInteger)index {
 //    if (index < _thumbs.count)
 //    return [_thumbs objectAtIndex:index];

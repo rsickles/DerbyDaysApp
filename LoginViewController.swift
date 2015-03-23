@@ -43,7 +43,7 @@ class LoginViewController: UIViewController,FBLoginViewDelegate {
                     self.goToHome()
                 } else {
                     println("User logged in through Facebook!")
-                    self.selectOrg()
+                    self.goToHome()
                 }
             } else {
                 println("Uh oh. The user cancelled the Facebook login.")
