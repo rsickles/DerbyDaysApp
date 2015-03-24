@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--Huntsman-->
+        <!--The Cause-->
         <scene sceneID="eSJ-nU-Pii">
             <objects>
                 <viewController id="P3A-B7-h4B" customClass="SigmaChiViewController" customModule="DerbyDaysApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,7 +32,7 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Huntsman" image="logohuntsman" id="s1b-Bz-a8k"/>
+                    <tabBarItem key="tabBarItem" title="The Cause" id="s1b-Bz-a8k"/>
                     <connections>
                         <outlet property="info" destination="7PJ-Er-XnS" id="iCv-el-pZ7"/>
                     </connections>
@@ -41,29 +41,10 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
             </objects>
             <point key="canvasLocation" x="750" y="1221"/>
         </scene>
-        <!--Social Feed-->
-        <scene sceneID="qzX-q3-e5s">
-            <objects>
-                <viewController id="Mat-ek-FaR" customClass="SocialFeedViewController" customModule="DerbyDaysApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Sx1-JW-k5k"/>
-                        <viewControllerLayoutGuide type="bottom" id="RLS-dG-cZ6"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="2Re-EI-72I">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Social Feed" id="BFD-0I-4CR"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SxG-Rt-RLK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="750" y="-1027"/>
-        </scene>
         <!--Scoreboard-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController title="Scoreboard" id="9pv-A4-QxB" customClass="FirstViewController" customModule="DerbyDaysApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="scoreboard" title="Scoreboard" id="9pv-A4-QxB" customClass="FirstViewController" customModule="DerbyDaysApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -75,7 +56,7 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="Amount Raised:" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
                                 <rect key="frame" x="172" y="67" width="257" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="37"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -113,7 +94,7 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Scoreboard" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="Scoreboard" image="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="amount_raised" destination="vkJ-Pr-TNu" id="iob-bU-cDH"/>
                         <outlet property="countdown" destination="bRs-bG-kQu" id="l1u-rS-OPb"/>
@@ -136,8 +117,8 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sva-pf-9db">
-                                <rect key="frame" x="240" y="458" width="146" height="30"/>
-                                <state key="normal" title="Login With Facebook">
+                                <rect key="frame" x="158" y="465" width="284" height="66"/>
+                                <state key="normal" backgroundImage="Rectangle 3 + Login with Facebook">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -145,7 +126,7 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.88491524998144022" green="0.88625332344979435" blue="1" alpha="0.85999999999999999" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="login" destination="sva-pf-9db" id="UIY-QO-nG8"/>
@@ -154,59 +135,6 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QM7-m5-bhY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-368" y="986"/>
-        </scene>
-        <!--Select Organization-->
-        <scene sceneID="Xsa-kQ-YLJ">
-            <objects>
-                <tableViewController storyboardIdentifier="org_select" title="Select Organization" id="aLn-9X-rbC" customClass="OrgTableViewController" customModule="DerbyDaysApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="0qW-pl-7jk">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="HKX-Ts-6Vo">
-                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <items>
-                                <navigationItem title=" Organization" id="h95-mq-LKz">
-                                    <barButtonItem key="rightBarButtonItem" systemItem="done" id="Lxh-ch-Ybe">
-                                        <connections>
-                                            <action selector="done:" destination="aLn-9X-rbC" id="q3q-c7-1g5"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </navigationItem>
-                            </items>
-                        </navigationBar>
-                        <sections>
-                            <tableViewSection id="Z4T-93-NBA">
-                                <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="dkr-EG-SkD">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dkr-EG-SkD" id="B92-gA-RIj">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pjl-Ei-law">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                                    <rect key="contentStretch" x="0.0" y="1.3877787807814457e-17" width="1" height="1"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="aLn-9X-rbC" id="YvP-wZ-nWQ"/>
-                            <outlet property="delegate" destination="aLn-9X-rbC" id="2is-J7-C5v"/>
-                        </connections>
-                    </tableView>
-                    <toolbarItems/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dVS-aY-kBI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-785" y="235"/>
         </scene>
         <!--Events-->
         <scene sceneID="eaK-17-0Dh">
@@ -300,10 +228,29 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
             </objects>
             <point key="canvasLocation" x="1566" y="1276"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Social Feed-->
+        <scene sceneID="1ZV-9l-8mA">
+            <objects>
+                <viewController id="1yI-J0-cac" customClass="SocialFeedViewController" customModule="DerbyDaysApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YZq-s5-NZR"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ooh-Tv-EaR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aLv-m5-j1h">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Social Feed" id="D5V-wL-jD5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rhC-Jk-ui5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-164" y="-614"/>
+        </scene>
+        <!--MainController-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController storyboardIdentifier="Home" id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainController" title="MainController" id="49e-Tb-3d3" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
@@ -313,8 +260,8 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="kJy-PD-CRY" kind="relationship" relationship="viewControllers" id="df6-7O-Xvr"/>
-                        <segue destination="Mat-ek-FaR" kind="relationship" relationship="viewControllers" id="GeR-yQ-71f"/>
                         <segue destination="P3A-B7-h4B" kind="relationship" relationship="viewControllers" id="Bzv-a8-i86"/>
+                        <segue destination="1yI-J0-cac" kind="relationship" relationship="viewControllers" id="oYA-KW-afz"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -342,7 +289,7 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
         </scene>
     </scenes>
     <resources>
+        <image name="Rectangle 3 + Login with Facebook" width="419" height="100"/>
         <image name="first" width="30" height="30"/>
-        <image name="logohuntsman" width="188" height="188"/>
     </resources>
 </document>

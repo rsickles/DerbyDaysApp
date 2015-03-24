@@ -14,7 +14,6 @@
 		926B466F1AB7DB0F004BEF80 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926B466E1AB7DB0F004BEF80 /* Accounts.framework */; };
 		926B46711AB7DB77004BEF80 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 926B46701AB7DB77004BEF80 /* libstdc++.6.dylib */; };
 		926B46731AB7E21B004BEF80 /* SocialFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926B46721AB7E21B004BEF80 /* SocialFeedViewController.swift */; };
-		926B467B1ABB5E57004BEF80 /* OrgTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926B467A1ABB5E57004BEF80 /* OrgTableViewController.swift */; };
 		926B467D1ABBAF49004BEF80 /* SigmaChiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926B467C1ABBAF49004BEF80 /* SigmaChiViewController.swift */; };
 		92910B981AC08D9900574DDA /* SVWebViewController.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92910B791AC08D9900574DDA /* SVWebViewController.strings */; };
 		92910B991AC08D9900574DDA /* SVModalWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92910B831AC08D9900574DDA /* SVModalWebViewController.m */; };
@@ -76,7 +75,6 @@
 		926B466E1AB7DB0F004BEF80 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		926B46701AB7DB77004BEF80 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
 		926B46721AB7E21B004BEF80 /* SocialFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialFeedViewController.swift; sourceTree = "<group>"; };
-		926B467A1ABB5E57004BEF80 /* OrgTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrgTableViewController.swift; sourceTree = "<group>"; };
 		926B467C1ABBAF49004BEF80 /* SigmaChiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigmaChiViewController.swift; sourceTree = "<group>"; };
 		92910B7A1AC08D9900574DDA /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/SVWebViewController.strings; sourceTree = "<group>"; };
 		92910B7B1AC08D9900574DDA /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/SVWebViewController.strings; sourceTree = "<group>"; };
@@ -268,12 +266,11 @@
 				92617CCD1AB74FBD00E86A83 /* EventsViewControllerTableViewController.swift */,
 				92DDA5611AB1B87700B9368C /* LoginViewController.swift */,
 				92DDA5191AB12C2200B9368C /* FirstViewController.swift */,
-				92DDA51D1AB12C2200B9368C /* Main.storyboard */,
 				926B467C1ABBAF49004BEF80 /* SigmaChiViewController.swift */,
 				926B46721AB7E21B004BEF80 /* SocialFeedViewController.swift */,
 				92617CCF1AB7891100E86A83 /* EventDetailsViewController.swift */,
-				926B467A1ABB5E57004BEF80 /* OrgTableViewController.swift */,
 				92DDA5201AB12C2200B9368C /* Images.xcassets */,
+				92DDA51D1AB12C2200B9368C /* Main.storyboard */,
 				92DDA5221AB12C2200B9368C /* LaunchScreen.xib */,
 				92DDA5151AB12C2200B9368C /* Supporting Files */,
 			);
@@ -500,7 +497,6 @@
 				92DDA51A1AB12C2200B9368C /* FirstViewController.swift in Sources */,
 				92910BA41AC08D9900574DDA /* SVWebViewControllerActivity.m in Sources */,
 				92910B9B1AC08D9900574DDA /* SVWebViewController.m in Sources */,
-				926B467B1ABB5E57004BEF80 /* OrgTableViewController.swift in Sources */,
 				926B46731AB7E21B004BEF80 /* SocialFeedViewController.swift in Sources */,
 				92910B9E1AC08D9900574DDA /* SVWebViewControllerActivityChrome.m in Sources */,
 			);

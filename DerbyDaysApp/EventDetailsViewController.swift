@@ -17,9 +17,6 @@ class EventDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        println(event_description)
-        println(event_location)
-        println(event_id)
         self.description_info.text = event_description
         self.location_info.text = event_location
 

@@ -71,9 +71,7 @@ class EventsViewControllerTableViewController: UITableViewController {
                 as UITableViewCell
             let event: AnyObject = self.eventList[indexPath.row]
             cell.textLabel?.text = event.objectForKey("Name") as NSString
-            
-            
-            
+
             var dateFormatter: NSDateFormatter = NSDateFormatter()
             dateFormatter.dateFormat = "MM-dd-yyyy-hh-mm"
             dateFormatter.timeZone = NSTimeZone(abbreviation: "UTC")
@@ -90,7 +88,6 @@ class EventsViewControllerTableViewController: UITableViewController {
             if segue.identifier == "ShowEventDetails" {
                 let detailViewController = segue.destinationViewController
                     as EventDetailsViewController
-                println("HIHIHI")
                 let myIndexPath = self.tableView.indexPathForSelectedRow()
                 let row = myIndexPath?.row
                 let event: AnyObject = self.eventList[row!]

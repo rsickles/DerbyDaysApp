@@ -52,13 +52,8 @@ class LoginViewController: UIViewController,FBLoginViewDelegate {
         
     }
     @IBOutlet var login: UIButton!
-    
-    func selectOrg(){
-        let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("org_select")
-        self.presentViewController(vc as UIViewController, animated: true, completion: nil)
-    }
     func goToHome(){
-        let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("Home")
+        let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("MainController")
         self.presentViewController(vc as UIViewController, animated: true, completion: nil)
     }
 }
