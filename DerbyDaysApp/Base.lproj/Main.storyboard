@@ -19,13 +19,13 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7PJ-Er-XnS">
                                 <rect key="frame" x="0.0" y="28" width="600" height="592"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">The men of Sigma Chi have committed to do all we can, pledging to be the generation to end cancer. Bold? Yes, as is the founder of the world-leader in cancer center, Huntsman Cancer Institute (HCI) Significant Sig and Order of Constantine Sig Jon M. Huntsman (Penn 1959). The world expects more of us than the world expects of other men. One in two men will get cancer. One in three women will get cancer. One in 10 kids will get cancer. How many men and women are in your extended family? Your Facebook friends list? Your chapter? These aren't just statistics - this is personal. And YOU can do something about it. 
+                                <string key="text">The men of Sigma Chi have committed to do all we can, pledging to be the generation to end cancer. Bold? Yes, as is the founder of the world-leader in cancer center, Huntsman Cancer Institute (HCI) Significant Sig and Order of Constantine Sig Jon M. Huntsman (Penn 1959). The world expects more of us than the world expects of other men. One in two men will get cancer. One in three women will get cancer. One in 10 kids will get cancer. How many men and women are in your extended family? Your Facebook friends list? Your chapter? These aren't just statistics - this is personal. And YOU can do something about it. 
 
 Sign up for the site, dedicate your own derby dollar, and send 10 e-mails. It’s that easy.
 
 The Derby Challenge is a friendly competition amongst chapter raising funds for cancer research at Huntsman Cancer Institute (HCI). Using this web site during your Derby Days or philanthropy week makes it easier and faster to collect funds. Thanks to our generous members, sorority partners, and our family and friends, Sigma Chi has raised more than $1 million for cancer research at HCI. 
 
-SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds research that pursues the most novel and innovative projects with immediate implications in caring for cancer patients. Chapter winners are announced each year at Balfour Leadership Training Workshop. The Challenge annually from August 1 to July 31.</mutableString>
+SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds research that pursues the most novel and innovative projects with immediate implications in caring for cancer patients. Chapter winners are announced each year at Balfour Leadership Training Workshop. The Challenge annually from August 1 to July 31.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -223,34 +223,37 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
             <point key="canvasLocation" x="1566" y="1276"/>
         </scene>
         <!--Social Feed-->
-        <scene sceneID="1ZV-9l-8mA">
+        <scene sceneID="oxr-Ez-CUV">
             <objects>
-                <viewController id="1yI-J0-cac" customClass="SocialFeedViewController" customModule="DerbyDaysApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gE5-Xi-cSM" customClass="SocialFeedViewController" customModule="DerbyDaysApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="YZq-s5-NZR"/>
-                        <viewControllerLayoutGuide type="bottom" id="Ooh-Tv-EaR"/>
+                        <viewControllerLayoutGuide type="top" id="it9-Ag-5Mb"/>
+                        <viewControllerLayoutGuide type="bottom" id="4Jr-66-8IO"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="aLv-m5-j1h">
+                    <view key="view" contentMode="scaleToFill" id="gYd-3B-SvJ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="event_background" translatesAutoresizingMaskIntoConstraints="NO" id="xGJ-fU-koG">
-                                <rect key="frame" x="100" y="115" width="401" height="370"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="event_background" translatesAutoresizingMaskIntoConstraints="NO" id="FbL-za-rev">
+                                <rect key="frame" x="65" y="28" width="471" height="465"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdY-SM-1eG">
-                                <rect key="frame" x="277" y="285" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSW-wC-H61">
+                                <rect key="frame" x="157" y="206" width="287" height="110"/>
+                                <state key="normal" image="view_photos">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="show_photos:" destination="gE5-Xi-cSM" eventType="touchUpInside" id="9BR-Vh-n9c"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.62745098040000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Social Feed" id="D5V-wL-jD5"/>
+                    <tabBarItem key="tabBarItem" title="Social Feed" id="UFv-h2-hIY"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rhC-Jk-ui5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xea-Vi-kmR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-164" y="-614"/>
+            <point key="canvasLocation" x="-168" y="-540"/>
         </scene>
         <!--MainController-->
         <scene sceneID="yl2-sM-qoP">
@@ -266,7 +269,7 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="kJy-PD-CRY" kind="relationship" relationship="viewControllers" id="df6-7O-Xvr"/>
                         <segue destination="P3A-B7-h4B" kind="relationship" relationship="viewControllers" id="Bzv-a8-i86"/>
-                        <segue destination="1yI-J0-cac" kind="relationship" relationship="viewControllers" id="oYA-KW-afz"/>
+                        <segue destination="gE5-Xi-cSM" kind="relationship" relationship="viewControllers" id="sWl-EG-SEJ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -302,5 +305,6 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
         <image name="event_icon" width="25" height="27"/>
         <image name="i" width="25" height="31"/>
         <image name="point_leaders_box" width="414" height="352"/>
+        <image name="view_photos" width="419" height="100"/>
     </resources>
 </document>

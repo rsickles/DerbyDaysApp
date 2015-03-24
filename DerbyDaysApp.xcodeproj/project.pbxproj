@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3BEEAA0BDC0C5FEDF6CDBE7F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A34B6E8E2DF95DEED5805EE /* libPods.a */; };
+		926155AD1AC1F34B003AA989 /* SocialFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926155AC1AC1F34B003AA989 /* SocialFeedViewController.swift */; };
 		92617CCE1AB74FBD00E86A83 /* EventsViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92617CCD1AB74FBD00E86A83 /* EventsViewControllerTableViewController.swift */; };
 		92617CD01AB7891100E86A83 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92617CCF1AB7891100E86A83 /* EventDetailsViewController.swift */; };
 		926B466D1AB7DB07004BEF80 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926B466C1AB7DB07004BEF80 /* Social.framework */; };
 		926B466F1AB7DB0F004BEF80 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926B466E1AB7DB0F004BEF80 /* Accounts.framework */; };
 		926B46711AB7DB77004BEF80 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 926B46701AB7DB77004BEF80 /* libstdc++.6.dylib */; };
-		926B46731AB7E21B004BEF80 /* SocialFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926B46721AB7E21B004BEF80 /* SocialFeedViewController.swift */; };
 		926B467D1ABBAF49004BEF80 /* SigmaChiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926B467C1ABBAF49004BEF80 /* SigmaChiViewController.swift */; };
 		92910B981AC08D9900574DDA /* SVWebViewController.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92910B791AC08D9900574DDA /* SVWebViewController.strings */; };
 		92910B991AC08D9900574DDA /* SVModalWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92910B831AC08D9900574DDA /* SVModalWebViewController.m */; };
@@ -69,12 +69,12 @@
 		0F2F792AC11E50E586E43C64 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		43025E1F86FF36B887E383F4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6A34B6E8E2DF95DEED5805EE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		926155AC1AC1F34B003AA989 /* SocialFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialFeedViewController.swift; sourceTree = "<group>"; };
 		92617CCD1AB74FBD00E86A83 /* EventsViewControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventsViewControllerTableViewController.swift; path = ../EventsViewControllerTableViewController.swift; sourceTree = "<group>"; };
 		92617CCF1AB7891100E86A83 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
 		926B466C1AB7DB07004BEF80 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		926B466E1AB7DB0F004BEF80 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		926B46701AB7DB77004BEF80 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
-		926B46721AB7E21B004BEF80 /* SocialFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialFeedViewController.swift; sourceTree = "<group>"; };
 		926B467C1ABBAF49004BEF80 /* SigmaChiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigmaChiViewController.swift; sourceTree = "<group>"; };
 		92910B7A1AC08D9900574DDA /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/SVWebViewController.strings; sourceTree = "<group>"; };
 		92910B7B1AC08D9900574DDA /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/SVWebViewController.strings; sourceTree = "<group>"; };
@@ -267,8 +267,8 @@
 				92DDA5611AB1B87700B9368C /* LoginViewController.swift */,
 				92DDA5191AB12C2200B9368C /* FirstViewController.swift */,
 				926B467C1ABBAF49004BEF80 /* SigmaChiViewController.swift */,
-				926B46721AB7E21B004BEF80 /* SocialFeedViewController.swift */,
 				92617CCF1AB7891100E86A83 /* EventDetailsViewController.swift */,
+				926155AC1AC1F34B003AA989 /* SocialFeedViewController.swift */,
 				92DDA5201AB12C2200B9368C /* Images.xcassets */,
 				92DDA51D1AB12C2200B9368C /* Main.storyboard */,
 				92DDA5221AB12C2200B9368C /* LaunchScreen.xib */,
@@ -492,12 +492,12 @@
 				92910B991AC08D9900574DDA /* SVModalWebViewController.m in Sources */,
 				92910BA21AC08D9900574DDA /* SVWebViewControllerActivitySafari.m in Sources */,
 				92617CCE1AB74FBD00E86A83 /* EventsViewControllerTableViewController.swift in Sources */,
+				926155AD1AC1F34B003AA989 /* SocialFeedViewController.swift in Sources */,
 				926B467D1ABBAF49004BEF80 /* SigmaChiViewController.swift in Sources */,
 				92DDA5621AB1B87700B9368C /* LoginViewController.swift in Sources */,
 				92DDA51A1AB12C2200B9368C /* FirstViewController.swift in Sources */,
 				92910BA41AC08D9900574DDA /* SVWebViewControllerActivity.m in Sources */,
 				92910B9B1AC08D9900574DDA /* SVWebViewController.m in Sources */,
-				926B46731AB7E21B004BEF80 /* SocialFeedViewController.swift in Sources */,
 				92910B9E1AC08D9900574DDA /* SVWebViewControllerActivityChrome.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
