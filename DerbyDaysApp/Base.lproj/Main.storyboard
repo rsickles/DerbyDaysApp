@@ -136,7 +136,7 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
                                     <constraint firstAttribute="width" constant="261" id="5BP-QI-8bj"/>
                                     <constraint firstAttribute="height" constant="109" id="ZFQ-eU-H5Z"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="91"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
@@ -150,6 +150,60 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
                                         <include reference="5BP-QI-8bj"/>
                                         <include reference="ZFQ-eU-H5Z"/>
                                     </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04c-OU-qCt">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="70" y="479" width="153" height="45"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLy-wy-tU6">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="70" y="544" width="153" height="45"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8V5-hI-5dK">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="70" y="607" width="153" height="45"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLK-l1-B5C">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="231" y="479" width="108" height="45"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNM-Ji-sal">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="231" y="544" width="108" height="45"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3e-RZ-143">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="231" y="607" width="108" height="45"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -169,6 +223,12 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="WT3-qC-JVM"/>
+                                <exclude reference="04c-OU-qCt"/>
+                                <exclude reference="PLy-wy-tU6"/>
+                                <exclude reference="8V5-hI-5dK"/>
+                                <exclude reference="fLK-l1-B5C"/>
+                                <exclude reference="ZNM-Ji-sal"/>
+                                <exclude reference="o3e-RZ-143"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="IUY-xc-THz"/>
@@ -186,6 +246,12 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="WT3-qC-JVM"/>
+                                <include reference="04c-OU-qCt"/>
+                                <include reference="PLy-wy-tU6"/>
+                                <include reference="8V5-hI-5dK"/>
+                                <include reference="fLK-l1-B5C"/>
+                                <include reference="ZNM-Ji-sal"/>
+                                <include reference="o3e-RZ-143"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="IUY-xc-THz"/>
