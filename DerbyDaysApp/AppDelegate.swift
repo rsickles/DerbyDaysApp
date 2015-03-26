@@ -18,14 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Parse.setApplicationId("U1bP0YPu2bJV6WfzBvdUldRB8nuRoGEMeyzrDygD", clientKey: "AeIi4piCfkeM191RCGUh5T79c2af31b9Dp7lPVcT")
         PFFacebookUtils.initializeFacebook()
         
-        // Assign tab bar item with titles
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vs: UITabBarController = storyboard.instantiateViewControllerWithIdentifier("MainController") as UITabBarController
-        let tabBar: UITabBar = vs.tabBar
-        let item1: UITabBarItem = tabBar.items?[0] as UITabBarItem
         return true
     }
-
+ 
     func application(application: UIApplication,
         openURL url: NSURL,
         sourceApplication: String?,

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3BEEAA0BDC0C5FEDF6CDBE7F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A34B6E8E2DF95DEED5805EE /* libPods.a */; };
+		9251B9181AC39C7A00503BA3 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9251B9171AC39C7A00503BA3 /* TabBarViewController.swift */; };
+		9251B91A1AC3B03500503BA3 /* UIImageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9251B9191AC3B03500503BA3 /* UIImageExt.swift */; };
 		926155AD1AC1F34B003AA989 /* SocialFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926155AC1AC1F34B003AA989 /* SocialFeedViewController.swift */; };
 		92617CCE1AB74FBD00E86A83 /* EventsViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92617CCD1AB74FBD00E86A83 /* EventsViewControllerTableViewController.swift */; };
 		92617CD01AB7891100E86A83 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92617CCF1AB7891100E86A83 /* EventDetailsViewController.swift */; };
@@ -69,6 +71,8 @@
 		0F2F792AC11E50E586E43C64 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		43025E1F86FF36B887E383F4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6A34B6E8E2DF95DEED5805EE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9251B9171AC39C7A00503BA3 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		9251B9191AC3B03500503BA3 /* UIImageExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExt.swift; sourceTree = "<group>"; };
 		926155AC1AC1F34B003AA989 /* SocialFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialFeedViewController.swift; sourceTree = "<group>"; };
 		92617CCD1AB74FBD00E86A83 /* EventsViewControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventsViewControllerTableViewController.swift; path = ../EventsViewControllerTableViewController.swift; sourceTree = "<group>"; };
 		92617CCF1AB7891100E86A83 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
@@ -263,12 +267,14 @@
 				92DDA5591AB12D7E00B9368C /* bridgingheader.m */,
 				92DDA5581AB12D7E00B9368C /* DerbyDaysApp-Bridging-Header.h */,
 				92DDA5171AB12C2200B9368C /* AppDelegate.swift */,
+				9251B9191AC3B03500503BA3 /* UIImageExt.swift */,
 				92617CCD1AB74FBD00E86A83 /* EventsViewControllerTableViewController.swift */,
 				92DDA5611AB1B87700B9368C /* LoginViewController.swift */,
 				92DDA5191AB12C2200B9368C /* FirstViewController.swift */,
 				926B467C1ABBAF49004BEF80 /* SigmaChiViewController.swift */,
 				92617CCF1AB7891100E86A83 /* EventDetailsViewController.swift */,
 				926155AC1AC1F34B003AA989 /* SocialFeedViewController.swift */,
+				9251B9171AC39C7A00503BA3 /* TabBarViewController.swift */,
 				92DDA5201AB12C2200B9368C /* Images.xcassets */,
 				92DDA51D1AB12C2200B9368C /* Main.storyboard */,
 				92DDA5221AB12C2200B9368C /* LaunchScreen.xib */,
@@ -490,6 +496,8 @@
 				92DDA5181AB12C2200B9368C /* AppDelegate.swift in Sources */,
 				92DDA55A1AB12D7E00B9368C /* bridgingheader.m in Sources */,
 				92910B991AC08D9900574DDA /* SVModalWebViewController.m in Sources */,
+				9251B9181AC39C7A00503BA3 /* TabBarViewController.swift in Sources */,
+				9251B91A1AC3B03500503BA3 /* UIImageExt.swift in Sources */,
 				92910BA21AC08D9900574DDA /* SVWebViewControllerActivitySafari.m in Sources */,
 				92617CCE1AB74FBD00E86A83 /* EventsViewControllerTableViewController.swift in Sources */,
 				926155AD1AC1F34B003AA989 /* SocialFeedViewController.swift in Sources */,

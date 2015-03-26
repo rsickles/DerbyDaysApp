@@ -53,7 +53,7 @@ class LoginViewController: UIViewController,FBLoginViewDelegate {
     }
     @IBOutlet var login: UIButton!
     func goToHome(){
-        let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("MainController")
-        self.presentViewController(vc as UIViewController, animated: true, completion: nil)
+        let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("TabBar")
+        self.showViewController(vc as UITabBarController, sender: vc)
     }
 }
