@@ -64,15 +64,24 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
                                 <state key="normal" image="donate_now_button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="23" y="259" width="361" height="150"/>
+                                </variation>
                                 <connections>
                                     <action selector="showDonatePage:" destination="9pv-A4-QxB" eventType="touchUpInside" id="mCF-hY-soE"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="amount_raised" translatesAutoresizingMaskIntoConstraints="NO" id="VUd-mV-Yle">
                                 <rect key="frame" x="111" y="28" width="378" height="160"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="37" width="361" height="214"/>
+                                </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="point_leaders_box" translatesAutoresizingMaskIntoConstraints="NO" id="bRw-rQ-F1c">
                                 <rect key="frame" x="107" y="304" width="382" height="239"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="23" y="450" width="361" height="260"/>
+                                </variation>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.62745098039215685" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -84,7 +93,7 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="750" y="-320.25"/>
         </scene>
         <!--Login-->
         <scene sceneID="JHX-6V-FE2">
@@ -98,26 +107,52 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SIGMA CHI" translatesAutoresizingMaskIntoConstraints="NO" id="B7e-AV-KN3">
-                                <rect key="frame" x="167" y="74" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SIGMA CHI" translatesAutoresizingMaskIntoConstraints="NO" id="B7e-AV-KN3">
+                                <rect key="frame" x="148" y="170" width="305" height="156"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="305" id="l2w-vL-j1y"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="305" id="wDd-TS-54e"/>
+                                </constraints>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="48" y="140" width="305" height="156"/>
+                                </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Created by the Lambda Pi chapter at Carnegie Mellon University" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLz-mM-cBb">
-                                <rect key="frame" x="9" y="559" width="575" height="21"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sva-pf-9db">
-                                <rect key="frame" x="145" y="240" width="284" height="66"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sva-pf-9db">
+                                <rect key="frame" x="116" y="397" width="368" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="9bU-u1-hQp"/>
+                                    <constraint firstAttribute="width" constant="368" id="I9c-yg-2K7"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="Rectangle 3 + Login with Facebook">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="16" y="367" width="368" height="90"/>
+                                </variation>
                                 <connections>
                                     <action selector="login:" destination="ejF-XR-cIP" eventType="touchUpInside" id="f1q-O8-TSD"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lambda Pi chapter at Carnegie Mellon University" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLz-mM-cBb">
+                                <rect key="frame" x="72" y="563" width="457" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="28" y="533" width="344" height="259"/>
+                                </variation>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.62745098039215685" blue="1" alpha="0.85999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.62745098039215685" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="sva-pf-9db" secondAttribute="centerX" id="Dje-sB-JcI"/>
+                            <constraint firstItem="sva-pf-9db" firstAttribute="top" secondItem="B7e-AV-KN3" secondAttribute="bottom" constant="71" id="L8h-XP-5FJ"/>
+                            <constraint firstItem="B7e-AV-KN3" firstAttribute="top" secondItem="cmm-Yi-zBw" secondAttribute="bottom" constant="120" id="QhA-TN-9Fz"/>
+                            <constraint firstAttribute="centerX" secondItem="DLz-mM-cBb" secondAttribute="centerX" id="eyI-vT-Kcv"/>
+                            <constraint firstItem="DLz-mM-cBb" firstAttribute="top" secondItem="sva-pf-9db" secondAttribute="bottom" constant="76" id="grQ-SW-9f6"/>
+                            <constraint firstItem="2lA-bx-ntO" firstAttribute="top" secondItem="DLz-mM-cBb" secondAttribute="bottom" constant="8" id="w57-3Y-s4z"/>
+                            <constraint firstAttribute="centerX" secondItem="B7e-AV-KN3" secondAttribute="centerX" id="xtl-LX-Z2L"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="login" destination="sva-pf-9db" id="UIY-QO-nG8"/>
@@ -125,7 +160,7 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QM7-m5-bhY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-368" y="986"/>
+            <point key="canvasLocation" x="-381" y="999"/>
         </scene>
         <!--Events-->
         <scene sceneID="eaK-17-0Dh">
