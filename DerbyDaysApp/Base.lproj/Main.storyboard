@@ -452,7 +452,7 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uN8-al-vCd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uN8-al-vCd">
                                 <rect key="frame" x="81" y="296" width="457" height="228"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="421" id="Lss-ll-fsr"/>
