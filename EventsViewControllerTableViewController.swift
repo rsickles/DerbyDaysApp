@@ -11,7 +11,7 @@ import UIKit
 class EventsViewControllerTableViewController: UITableViewController {
 
     var eventList: NSArray = [PFObject]()
-    
+    var sectionsInTable: [String] = ["Daily Events","Ongoing Events"]
 
     func getallEvents() {
         var query = PFQuery(className:"Events")
@@ -33,18 +33,47 @@ class EventsViewControllerTableViewController: UITableViewController {
 
     }
     
+    func getSectionItems(section: Int) -> [AnyObject]! {
+        var sectionItems = [AnyObject]()
+        
+        // loop through the testArray to get the items for this sections's date
+        for item in self.eventList {
+            // if the item's date equals the section's date then add it
+            if section == 0 {
+                if (item.objectForKey("ongoing") as Bool == false) {
+                    sectionItems.append(item)
+                }
+            }
+            else {
+                if (item.objectForKey("ongoing") as Bool == true) {
+                    sectionItems.append(item)
+                }
+            }
+        }
+        
+        return sectionItems
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.getallEvents()
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.0/255.0, green: 160.0/255.0, blue: 255.0/255.0, alpha: 255.0/255.0)
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        self.tableView.tableFooterView = UIView(frame:CGRectZero)
+        self.tableView.separatorColor = UIColor.whiteColor()
                 //get all events
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        let header: UITableViewHeaderFooterView = view as UITableViewHeaderFooterView //recast your view as a UITableViewHeaderFooterView
+        header.contentView.backgroundColor = UIColor(red: 0/255, green: 137/255, blue: 218/255, alpha: 1.0) //make the background color light blue
+        header.textLabel.textColor = UIColor.whiteColor() //make the text white
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,22 +86,27 @@ class EventsViewControllerTableViewController: UITableViewController {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 1
+        return 2
+    }
+    
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return sectionsInTable[section]
+    }
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.getSectionItems(section).count
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete method implementation.
-        // Return the number of rows in the section.
-        println(self.eventList.count)
-        let count = self.eventList.count as Int
-        return (count)
-    }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath)
         -> UITableViewCell {
             let cell = tableView.dequeueReusableCellWithIdentifier("EventCell", forIndexPath: indexPath)
                 as UITableViewCell
-            let event: AnyObject = self.eventList[indexPath.row]
+            
+            let sectionItems = self.getSectionItems(indexPath.section)
+            // get the item for the row in this section
+            let event: AnyObject = sectionItems[indexPath.row]
+   
             cell.textLabel?.text = event.objectForKey("Name") as NSString
 
             var dateFormatter: NSDateFormatter = NSDateFormatter()
@@ -82,7 +116,7 @@ class EventsViewControllerTableViewController: UITableViewController {
             dateFormatter.timeStyle = NSDateFormatterStyle.ShortStyle
             let dater = event.objectForKey("Date") as NSDate
             var someDate = dateFormatter.stringFromDate(dater)
-            cell.detailTextLabel?.text = someDate
+            cell.detailTextLabel?.text = "Event Start: " + someDate
             return cell
     }
     override func prepareForSegue(segue: UIStoryboardSegue,
@@ -99,49 +133,6 @@ class EventsViewControllerTableViewController: UITableViewController {
                 detailViewController.event_id = event.objectId as NSString
             }
     }
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the specified item to be editable.
-        return true
-    }
-    */
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

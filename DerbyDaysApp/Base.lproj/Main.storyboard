@@ -200,24 +200,42 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SIGMA CHI" translatesAutoresizingMaskIntoConstraints="NO" id="B7e-AV-KN3">
                                 <rect key="frame" x="148" y="170" width="305" height="156"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="305" id="l2w-vL-j1y"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="305" id="wDd-TS-54e"/>
+                                    <constraint firstAttribute="height" constant="174" id="FrZ-0a-c3B"/>
+                                    <constraint firstAttribute="width" constant="305" id="JWt-A6-kci"/>
                                 </constraints>
-                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="48" y="140" width="305" height="156"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="FrZ-0a-c3B"/>
+                                        <exclude reference="JWt-A6-kci"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="FrZ-0a-c3B"/>
+                                        <include reference="JWt-A6-kci"/>
+                                    </mask>
                                 </variation>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sva-pf-9db">
                                 <rect key="frame" x="116" y="397" width="368" height="90"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="9bU-u1-hQp"/>
-                                    <constraint firstAttribute="width" constant="368" id="I9c-yg-2K7"/>
+                                    <constraint firstAttribute="height" constant="65" id="46N-rs-9WS"/>
+                                    <constraint firstAttribute="width" constant="290" id="Rdp-Ma-J8r"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="Rectangle 3 + Login with Facebook">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="16" y="367" width="368" height="90"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="46N-rs-9WS"/>
+                                        <exclude reference="Rdp-Ma-J8r"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="46N-rs-9WS"/>
+                                        <include reference="Rdp-Ma-J8r"/>
+                                    </mask>
                                 </variation>
                                 <connections>
                                     <action selector="login:" destination="ejF-XR-cIP" eventType="touchUpInside" id="f1q-O8-TSD"/>
@@ -225,24 +243,56 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lambda Pi chapter at Carnegie Mellon University" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLz-mM-cBb">
                                 <rect key="frame" x="72" y="563" width="457" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="368" id="N5c-MW-jYm"/>
+                                    <constraint firstAttribute="height" constant="30" id="eWf-hv-jLk"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="28" y="533" width="344" height="259"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="N5c-MW-jYm"/>
+                                        <exclude reference="eWf-hv-jLk"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="N5c-MW-jYm"/>
+                                        <include reference="eWf-hv-jLk"/>
+                                    </mask>
                                 </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.62745098039215685" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="sva-pf-9db" secondAttribute="centerX" id="Dje-sB-JcI"/>
-                            <constraint firstItem="sva-pf-9db" firstAttribute="top" secondItem="B7e-AV-KN3" secondAttribute="bottom" constant="71" id="L8h-XP-5FJ"/>
-                            <constraint firstItem="B7e-AV-KN3" firstAttribute="top" secondItem="cmm-Yi-zBw" secondAttribute="bottom" constant="120" id="QhA-TN-9Fz"/>
-                            <constraint firstAttribute="centerX" secondItem="DLz-mM-cBb" secondAttribute="centerX" id="eyI-vT-Kcv"/>
-                            <constraint firstItem="DLz-mM-cBb" firstAttribute="top" secondItem="sva-pf-9db" secondAttribute="bottom" constant="76" id="grQ-SW-9f6"/>
-                            <constraint firstItem="2lA-bx-ntO" firstAttribute="top" secondItem="DLz-mM-cBb" secondAttribute="bottom" constant="8" id="w57-3Y-s4z"/>
-                            <constraint firstAttribute="centerX" secondItem="B7e-AV-KN3" secondAttribute="centerX" id="xtl-LX-Z2L"/>
+                            <constraint firstItem="sva-pf-9db" firstAttribute="top" secondItem="B7e-AV-KN3" secondAttribute="bottom" constant="53" id="3Wd-cH-no1"/>
+                            <constraint firstAttribute="centerX" secondItem="B7e-AV-KN3" secondAttribute="centerX" id="VRw-Za-AAR"/>
+                            <constraint firstItem="2lA-bx-ntO" firstAttribute="top" secondItem="DLz-mM-cBb" secondAttribute="bottom" constant="8" id="VbY-I7-Gqb"/>
+                            <constraint firstAttribute="centerX" secondItem="sva-pf-9db" secondAttribute="centerX" id="brS-OX-F2N"/>
+                            <constraint firstAttribute="centerX" secondItem="DLz-mM-cBb" secondAttribute="centerX" id="cP9-Nh-9Qf"/>
+                            <constraint firstItem="B7e-AV-KN3" firstAttribute="top" secondItem="cmm-Yi-zBw" secondAttribute="bottom" constant="120" id="tj6-MY-cak"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="VRw-Za-AAR"/>
+                                <exclude reference="tj6-MY-cak"/>
+                                <exclude reference="3Wd-cH-no1"/>
+                                <exclude reference="brS-OX-F2N"/>
+                                <exclude reference="cP9-Nh-9Qf"/>
+                                <exclude reference="VbY-I7-Gqb"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="VRw-Za-AAR"/>
+                                <include reference="tj6-MY-cak"/>
+                                <include reference="3Wd-cH-no1"/>
+                                <include reference="brS-OX-F2N"/>
+                                <include reference="cP9-Nh-9Qf"/>
+                                <include reference="VbY-I7-Gqb"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="login" destination="sva-pf-9db" id="UIY-QO-nG8"/>
@@ -256,13 +306,14 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
         <scene sceneID="eaK-17-0Dh">
             <objects>
                 <tableViewController title="Events" id="BRr-05-38a" customClass="EventsViewControllerTableViewController" customModule="DerbyDaysApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="itN-ZN-OsS">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="itN-ZN-OsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.62745098040000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" red="0.0" green="0.62745098040000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.22352941176470587" green="0.70980392156862748" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.22352941176470587" green="0.70980392156862748" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="separatorColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="sectionIndexBackgroundColor" red="0.0" green="0.62745098040000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.22352941176470587" green="0.70980392156862748" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexTrackingBackgroundColor" red="0.0" green="0.62745098040000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="EventCell" textLabel="CQo-P1-hER" detailTextLabel="ZTm-KG-RD0" style="IBUITableViewCellStyleSubtitle" id="Z3O-Np-acw">
@@ -284,8 +335,10 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
                                         </label>
                                     </subviews>
                                     <color key="backgroundColor" red="0.0" green="0.62745098040000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.0" green="0.62745098040000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.22352941176470587" green="0.70980392156862748" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="5cm-pB-eE4" kind="show" identifier="ShowEventDetails" id="l7A-6S-LZ7"/>
                                 </connections>
