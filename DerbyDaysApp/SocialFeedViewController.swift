@@ -40,14 +40,17 @@ class SocialFeedViewController: UIViewController, MWPhotoBrowserDelegate, UINavi
                 let stuff : NSDictionary = images.objectAtIndex(index) as NSDictionary
                 let stuff2 : NSArray = stuff.objectForKey("images") as NSArray
                 let stuff3 : NSDictionary = stuff2.objectAtIndex(stuff2.count-1) as NSDictionary
-                // println(images)
                 let stuff4: NSString = stuff3.objectForKey("source") as NSString
                 // Display the image
                 let url = NSURL(string: stuff4)
                 let data = NSData(contentsOfURL: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check
                 var photo = UIImage(data: data!)
                 var newPhoto = MWPhoto(image: photo)
-                newPhoto.caption = "Meek mill"
+                if let caption = stuff.objectForKey("name") as? NSString {
+                    if(caption.length < 350) {
+                    newPhoto.caption = caption
+                    }
+                }
                 self.photos.append(newPhoto)
             }
         }

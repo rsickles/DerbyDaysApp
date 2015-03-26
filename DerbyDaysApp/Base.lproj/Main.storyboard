@@ -83,15 +83,6 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkJ-Pr-TNu">
-                                <rect key="frame" x="180" y="138" width="182" height="50"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="5" y="-45" width="0.0" height="0.0"/>
-                                </variation>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDu-ga-W9T">
                                 <rect key="frame" x="106" y="196" width="383" height="100"/>
                                 <constraints>
@@ -139,22 +130,51 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="point_leaders_box" translatesAutoresizingMaskIntoConstraints="NO" id="bRw-rQ-F1c">
                                 <rect key="frame" x="107" y="304" width="382" height="239"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WT3-qC-JVM">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="261" id="5BP-QI-8bj"/>
+                                    <constraint firstAttribute="height" constant="109" id="ZFQ-eU-H5Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="91"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5BP-QI-8bj"/>
+                                        <exclude reference="ZFQ-eU-H5Z"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="5BP-QI-8bj"/>
+                                        <include reference="ZFQ-eU-H5Z"/>
+                                    </mask>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.62745098039215685" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="bRw-rQ-F1c" firstAttribute="top" secondItem="LDu-ga-W9T" secondAttribute="bottom" constant="38" id="1cM-Yq-wRv"/>
                             <constraint firstItem="bRw-rQ-F1c" firstAttribute="leading" secondItem="LDu-ga-W9T" secondAttribute="leading" id="2Et-CN-5qq"/>
+                            <constraint firstItem="VUd-mV-Yle" firstAttribute="top" secondItem="WT3-qC-JVM" secondAttribute="bottom" constant="-120" id="IUY-xc-THz"/>
                             <constraint firstItem="VUd-mV-Yle" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="54" id="S5Z-c8-p6G"/>
                             <constraint firstItem="LDu-ga-W9T" firstAttribute="top" secondItem="VUd-mV-Yle" secondAttribute="bottom" constant="36" id="T1g-2E-1SY"/>
                             <constraint firstItem="bRw-rQ-F1c" firstAttribute="trailing" secondItem="LDu-ga-W9T" secondAttribute="trailing" id="X6K-xk-k3U"/>
+                            <constraint firstItem="WT3-qC-JVM" firstAttribute="leading" secondItem="VUd-mV-Yle" secondAttribute="trailing" constant="-275" id="a7Q-34-8XX"/>
                             <constraint firstAttribute="centerX" secondItem="VUd-mV-Yle" secondAttribute="centerX" id="d7t-mB-CgQ"/>
                             <constraint firstAttribute="centerX" secondItem="LDu-ga-W9T" secondAttribute="centerX" id="fWy-JQ-hao"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="bRw-rQ-F1c" secondAttribute="bottom" constant="40" id="oKV-Pv-79Z"/>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="WT3-qC-JVM"/>
+                            </mask>
                             <mask key="constraints">
+                                <exclude reference="IUY-xc-THz"/>
                                 <exclude reference="S5Z-c8-p6G"/>
                                 <exclude reference="d7t-mB-CgQ"/>
+                                <exclude reference="a7Q-34-8XX"/>
                                 <exclude reference="T1g-2E-1SY"/>
                                 <exclude reference="fWy-JQ-hao"/>
                                 <exclude reference="1cM-Yq-wRv"/>
@@ -164,9 +184,14 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="WT3-qC-JVM"/>
+                            </mask>
                             <mask key="constraints">
+                                <include reference="IUY-xc-THz"/>
                                 <include reference="S5Z-c8-p6G"/>
                                 <include reference="d7t-mB-CgQ"/>
+                                <include reference="a7Q-34-8XX"/>
                                 <include reference="T1g-2E-1SY"/>
                                 <include reference="fWy-JQ-hao"/>
                                 <include reference="1cM-Yq-wRv"/>
@@ -178,7 +203,7 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
                     </view>
                     <tabBarItem key="tabBarItem" title="Scoreboard" image="score-icon-small" id="acW-dT-cKf"/>
                     <connections>
-                        <outlet property="amount_raised" destination="vkJ-Pr-TNu" id="iob-bU-cDH"/>
+                        <outlet property="amount_raised" destination="WT3-qC-JVM" id="PoR-kq-MVM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>

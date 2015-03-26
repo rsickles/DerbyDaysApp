@@ -16,12 +16,11 @@ class FirstViewController: UIViewController {
     }
     
     
+    @IBOutlet var amount_raised: UILabel!
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    @IBOutlet var amount_raised: UILabel!
     
     @IBAction func showDonatePage(sender: UIButton) {
         let webViewController = SVModalWebViewController(address: "https://www.gofundme.com/cmuderbydays/donate")
@@ -32,12 +31,12 @@ class FirstViewController: UIViewController {
         query.getFirstObjectInBackgroundWithBlock {
             (object: PFObject!, error: NSError!) -> Void in
             if (error != nil || object == nil) {
-            println("The getFirstObject request failed.")
+                println("The getFirstObject request failed.")
             }
         else {
             // The find succeeded.
                 println(object.objectForKey("amount_raised"))
-            self.amount_raised.text = object.objectForKey("amount_raised") as? String
+            self.amount_raised.text = "$ " + (object.objectForKey("amount_raised") as? String)!
             println("Successfully retrieved the object.")
         }
     }
