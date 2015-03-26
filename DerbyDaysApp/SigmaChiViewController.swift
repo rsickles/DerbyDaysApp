@@ -13,6 +13,8 @@ class SigmaChiViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.info.userInteractionEnabled = false
+        self.info.textColor = UIColor.whiteColor()
+        self.info.backgroundColor = UIColor(red: 0.0/255.0, green: 160.0/255.0, blue: 255.0/255.0, alpha: 255.0/255.0)
         // Do any additional setup after loading the view.
     }
 

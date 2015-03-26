@@ -19,18 +19,48 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7PJ-Er-XnS">
                                 <rect key="frame" x="0.0" y="28" width="600" height="592"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">The men of Sigma Chi have committed to do all we can, pledging to be the generation to end cancer. Bold? Yes, as is the founder of the world-leader in cancer center, Huntsman Cancer Institute (HCI) Significant Sig and Order of Constantine Sig Jon M. Huntsman (Penn 1959). The world expects more of us than the world expects of other men. One in two men will get cancer. One in three women will get cancer. One in 10 kids will get cancer. How many men and women are in your extended family? Your Facebook friends list? Your chapter? These aren't just statistics - this is personal. And YOU can do something about it. 
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="596" id="le5-X0-zmO"/>
+                                    <constraint firstAttribute="width" constant="295" id="x9Y-7R-Rxs"/>
+                                </constraints>
+                                <mutableString key="text">The men of Sigma Chi have committed to do all we can, pledging to be the generation to end cancer. Bold? Yes, as is the founder of the world-leader in cancer center, Huntsman Cancer Institute (HCI) Significant Sig and Order of Constantine Sig Jon M. Huntsman (Penn 1959). The world expects more of us than the world expects of other men. One in two men will get cancer. One in three women will get cancer. One in 10 kids will get cancer. How many men and women are in your extended family? Your Facebook friends list? Your chapter? These aren't just statistics - this is personal. And YOU can do something about it. 
 
-Sign up for the site, dedicate your own derby dollar, and send 10 e-mails. It’s that easy.
+The Derby Challenge is a friendly competition amongst chapters raising funds for cancer research at Huntsman Cancer Institute (HCI). Thanks to our generous members, sorority partners, and our family and friends, Sigma Chi has raised more than $1 million for cancer research at HCI. 
 
-The Derby Challenge is a friendly competition amongst chapter raising funds for cancer research at Huntsman Cancer Institute (HCI). Using this web site during your Derby Days or philanthropy week makes it easier and faster to collect funds. Thanks to our generous members, sorority partners, and our family and friends, Sigma Chi has raised more than $1 million for cancer research at HCI. 
-
-SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds research that pursues the most novel and innovative projects with immediate implications in caring for cancer patients. Chapter winners are announced each year at Balfour Leadership Training Workshop. The Challenge annually from August 1 to July 31.</string>
+SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds research that pursues the most novel and innovative projects with immediate implications in caring for cancer patients. Chapter winners are announced each year at Balfour Leadership Training Workshop. The Challenge annually from August 1 to July 31.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="le5-X0-zmO"/>
+                                        <exclude reference="x9Y-7R-Rxs"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="le5-X0-zmO"/>
+                                        <include reference="x9Y-7R-Rxs"/>
+                                    </mask>
+                                </variation>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.62745098040000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="7PJ-Er-XnS" firstAttribute="centerX" secondItem="4AU-wk-jjz" secondAttribute="centerX" id="Yfa-cj-iEd"/>
+                            <constraint firstItem="uAV-cU-8Ta" firstAttribute="top" secondItem="7PJ-Er-XnS" secondAttribute="bottom" constant="5" id="ymM-Gw-I94"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Yfa-cj-iEd"/>
+                                <exclude reference="ymM-Gw-I94"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Yfa-cj-iEd"/>
+                                <include reference="ymM-Gw-I94"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" tag="3" title="The Cause" image="cause-icon" id="s1b-Bz-a8k"/>
                     <connections>
