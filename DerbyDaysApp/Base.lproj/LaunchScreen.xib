@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,28 +10,18 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by the Lambda Pi chapter at Carnegie Mellon University" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
-                    <rect key="frame" x="45" y="451" width="390" height="21"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="21" id="6Bq-dn-1FH"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group" translatesAutoresizingMaskIntoConstraints="NO" id="chR-R0-hDo">
                     <rect key="frame" x="87" y="79" width="306" height="321"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="321" id="g0K-9a-aEt"/>
+                        <constraint firstAttribute="width" constant="306" id="pjT-ev-8WC"/>
+                    </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="8ie-xW-0ye" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottomMargin" id="7e9-s7-NHZ"/>
-                <constraint firstItem="chR-R0-hDo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="87" id="AYK-FQ-dpt"/>
-                <constraint firstItem="chR-R0-hDo" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="a14-fq-vxH"/>
-                <constraint firstItem="chR-R0-hDo" firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="atW-2a-vS5"/>
-                <constraint firstItem="8ie-xW-0ye" firstAttribute="top" secondItem="chR-R0-hDo" secondAttribute="bottom" constant="51" id="dWK-ES-Q84"/>
-                <constraint firstItem="chR-R0-hDo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="79" id="htY-XF-cAN"/>
-                <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="45" id="rGm-83-aXy"/>
+                <constraint firstAttribute="centerY" secondItem="chR-R0-hDo" secondAttribute="centerY" id="H8e-Ir-fgr"/>
+                <constraint firstAttribute="centerX" secondItem="chR-R0-hDo" secondAttribute="centerX" id="PwB-wH-BB2"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
