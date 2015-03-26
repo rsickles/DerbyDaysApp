@@ -35,7 +35,6 @@ class EventsViewControllerTableViewController: UITableViewController {
     
     func getSectionItems(section: Int) -> [AnyObject]! {
         var sectionItems = [AnyObject]()
-        
         // loop through the testArray to get the items for this sections's date
         for item in self.eventList {
             // if the item's date equals the section's date then add it
@@ -62,12 +61,6 @@ class EventsViewControllerTableViewController: UITableViewController {
         self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
         self.tableView.tableFooterView = UIView(frame:CGRectZero)
         self.tableView.separatorColor = UIColor.whiteColor()
-                //get all events
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     
     override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
@@ -127,7 +120,9 @@ class EventsViewControllerTableViewController: UITableViewController {
                     as EventDetailsViewController
                 let myIndexPath = self.tableView.indexPathForSelectedRow()
                 let row = myIndexPath?.row
-                let event: AnyObject = self.eventList[row!]
+                let sectionItems = self.getSectionItems(myIndexPath!.section)
+                // get the item for the row in this section
+                let event: AnyObject = sectionItems[row!]
                 detailViewController.event_description = event.objectForKey("Description") as NSString
                 detailViewController.event_location = event.objectForKey("Location") as NSString
                 detailViewController.event_id = event.objectId as NSString

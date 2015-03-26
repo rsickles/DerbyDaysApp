@@ -23,10 +23,6 @@ class FirstViewController: UIViewController {
 
     @IBOutlet var amount_raised: UILabel!
     
-    
-    @IBOutlet var countdown: UILabel!
-
-    
     @IBAction func showDonatePage(sender: UIButton) {
         let webViewController = SVModalWebViewController(address: "https://www.gofundme.com/cmuderbydays/donate")
         self.presentViewController(webViewController, animated: true, completion: nil)

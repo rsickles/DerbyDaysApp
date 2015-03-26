@@ -13,7 +13,6 @@ class SocialFeedViewController: UIViewController, MWPhotoBrowserDelegate, UINavi
     
     var photos = [MWPhoto]()
     
-    @IBOutlet var navbar: UINavigationBar!
     @IBAction func show_photos(sender: UIButton) {
         var browser = MWPhotoBrowser(delegate: self)
         browser.displayActionButton = true; // Show action button to allow sharing, copying, etc (defaults to YES)
@@ -58,8 +57,6 @@ class SocialFeedViewController: UIViewController, MWPhotoBrowserDelegate, UINavi
     override func viewDidAppear(animated: Bool) {
     }
     
-    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -67,8 +64,6 @@ class SocialFeedViewController: UIViewController, MWPhotoBrowserDelegate, UINavi
     
     
     //    MWPhotoBrowserDelegate Methods
-    
-    
     func numberOfPhotosInPhotoBrowser(photoBrowser: MWPhotoBrowser!) -> UInt {
         return UInt(self.photos.count)
     }
@@ -85,14 +80,5 @@ class SocialFeedViewController: UIViewController, MWPhotoBrowserDelegate, UINavi
         }
         return nil
     }
-    
-    /*
-    // MARK: - Navigation
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
-    }
-    */
-    
+
 }

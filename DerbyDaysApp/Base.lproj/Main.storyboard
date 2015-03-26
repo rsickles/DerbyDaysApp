@@ -369,33 +369,159 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="event_background" translatesAutoresizingMaskIntoConstraints="NO" id="1W7-gI-KZP">
                                 <rect key="frame" x="59" y="122" width="479" height="402"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="368" id="Iwh-6l-X5B"/>
+                                    <constraint firstAttribute="height" constant="618" id="pr4-58-Nuh"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Iwh-6l-X5B"/>
+                                        <exclude reference="pr4-58-Nuh"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Iwh-6l-X5B"/>
+                                        <include reference="pr4-58-Nuh"/>
+                                    </mask>
+                                </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eyk-Ol-ytx">
                                 <rect key="frame" x="81" y="164" width="72" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="152" id="LJt-bN-pHY"/>
+                                    <constraint firstAttribute="height" constant="41" id="Xkr-i8-pW2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="LJt-bN-pHY"/>
+                                        <exclude reference="Xkr-i8-pW2"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="LJt-bN-pHY"/>
+                                        <include reference="Xkr-i8-pW2"/>
+                                    </mask>
+                                </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5r-KA-zT7">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="N/A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5r-KA-zT7">
                                 <rect key="frame" x="181" y="164" width="363" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="QlY-eu-VY0"/>
+                                    <constraint firstAttribute="width" constant="338" id="wWE-hl-OzC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="QlY-eu-VY0"/>
+                                        <exclude reference="wWE-hl-OzC"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="QlY-eu-VY0"/>
+                                        <include reference="wWE-hl-OzC"/>
+                                    </mask>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9c-Pz-keC">
                                 <rect key="frame" x="81" y="255" width="97" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="208" id="GwC-W5-gWt"/>
+                                    <constraint firstAttribute="height" constant="35" id="yRh-BP-Cej"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="GwC-W5-gWt"/>
+                                        <exclude reference="yRh-BP-Cej"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="GwC-W5-gWt"/>
+                                        <include reference="yRh-BP-Cej"/>
+                                    </mask>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uN8-al-vCd">
                                 <rect key="frame" x="81" y="296" width="457" height="228"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="421" id="Lss-ll-fsr"/>
+                                    <constraint firstAttribute="width" constant="338" id="U2X-71-8U4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Lss-ll-fsr"/>
+                                        <exclude reference="U2X-71-8U4"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Lss-ll-fsr"/>
+                                        <include reference="U2X-71-8U4"/>
+                                    </mask>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.62745098040000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="1W7-gI-KZP" firstAttribute="leading" secondItem="R9c-Pz-keC" secondAttribute="trailing" constant="-218" id="81h-ka-KiF"/>
+                            <constraint firstItem="uN8-al-vCd" firstAttribute="top" secondItem="1W7-gI-KZP" secondAttribute="bottom" constant="-446" id="A05-mq-uWC"/>
+                            <constraint firstItem="uN8-al-vCd" firstAttribute="leading" secondItem="1W7-gI-KZP" secondAttribute="trailing" constant="-353" id="DOI-ey-D4e"/>
+                            <constraint firstItem="x5r-KA-zT7" firstAttribute="top" secondItem="Eyk-Ol-ytx" secondAttribute="bottom" constant="8" id="JvQ-3b-1qU"/>
+                            <constraint firstAttribute="centerX" secondItem="1W7-gI-KZP" secondAttribute="centerX" id="WHr-tR-xO8"/>
+                            <constraint firstItem="R9c-Pz-keC" firstAttribute="top" secondItem="Eyk-Ol-ytx" secondAttribute="bottom" constant="109" id="YAp-QY-xqd"/>
+                            <constraint firstItem="1W7-gI-KZP" firstAttribute="top" secondItem="Eyk-Ol-ytx" secondAttribute="bottom" constant="-50" id="YHt-Ek-J3v"/>
+                            <constraint firstItem="1W7-gI-KZP" firstAttribute="top" secondItem="mQn-6l-bl0" secondAttribute="bottom" constant="20" id="aqt-cZ-YBl"/>
+                            <constraint firstItem="1W7-gI-KZP" firstAttribute="leading" secondItem="Eyk-Ol-ytx" secondAttribute="trailing" constant="-162" id="lFh-TE-2DJ"/>
+                            <constraint firstAttribute="centerY" secondItem="uN8-al-vCd" secondAttribute="centerY" constant="-105.5" id="qbC-aV-k9B"/>
+                            <constraint firstItem="x5r-KA-zT7" firstAttribute="leading" secondItem="1W7-gI-KZP" secondAttribute="trailing" constant="-353" id="usm-eO-UEI"/>
+                            <constraint firstItem="XWu-jM-wkp" firstAttribute="top" secondItem="1W7-gI-KZP" secondAttribute="bottom" constant="10" id="zpj-gF-jQU"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="81h-ka-KiF"/>
+                                <exclude reference="WHr-tR-xO8"/>
+                                <exclude reference="YHt-Ek-J3v"/>
+                                <exclude reference="aqt-cZ-YBl"/>
+                                <exclude reference="lFh-TE-2DJ"/>
+                                <exclude reference="JvQ-3b-1qU"/>
+                                <exclude reference="usm-eO-UEI"/>
+                                <exclude reference="YAp-QY-xqd"/>
+                                <exclude reference="A05-mq-uWC"/>
+                                <exclude reference="DOI-ey-D4e"/>
+                                <exclude reference="qbC-aV-k9B"/>
+                                <exclude reference="zpj-gF-jQU"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="81h-ka-KiF"/>
+                                <include reference="WHr-tR-xO8"/>
+                                <include reference="YHt-Ek-J3v"/>
+                                <include reference="aqt-cZ-YBl"/>
+                                <include reference="lFh-TE-2DJ"/>
+                                <include reference="JvQ-3b-1qU"/>
+                                <include reference="usm-eO-UEI"/>
+                                <include reference="YAp-QY-xqd"/>
+                                <include reference="A05-mq-uWC"/>
+                                <include reference="DOI-ey-D4e"/>
+                                <include reference="qbC-aV-k9B"/>
+                                <include reference="zpj-gF-jQU"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="description_info" destination="uN8-al-vCd" id="8es-RK-Jpb"/>
@@ -404,7 +530,7 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wJ9-cx-oYh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1566" y="1276"/>
+            <point key="canvasLocation" x="1566" y="1275.75"/>
         </scene>
         <!--Social Feed-->
         <scene sceneID="oxr-Ez-CUV">
