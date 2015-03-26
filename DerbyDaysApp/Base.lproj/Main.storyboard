@@ -337,18 +337,72 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="event_background" translatesAutoresizingMaskIntoConstraints="NO" id="FbL-za-rev">
                                 <rect key="frame" x="65" y="28" width="471" height="465"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="313" id="SCH-dD-lvq"/>
+                                    <constraint firstAttribute="width" constant="313" id="stI-63-Qyd"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="SCH-dD-lvq"/>
+                                        <exclude reference="stI-63-Qyd"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="SCH-dD-lvq"/>
+                                        <include reference="stI-63-Qyd"/>
+                                    </mask>
+                                </variation>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSW-wC-H61">
                                 <rect key="frame" x="157" y="206" width="287" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="Nma-Qn-aMI"/>
+                                    <constraint firstAttribute="width" constant="287" id="weI-KW-qLa"/>
+                                </constraints>
                                 <state key="normal" image="view_photos">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Nma-Qn-aMI"/>
+                                        <exclude reference="weI-KW-qLa"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Nma-Qn-aMI"/>
+                                        <include reference="weI-KW-qLa"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="show_photos:" destination="gE5-Xi-cSM" eventType="touchUpInside" id="9BR-Vh-n9c"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.62745098040000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="sSW-wC-H61" secondAttribute="centerX" id="0A5-t1-dnK"/>
+                            <constraint firstAttribute="centerY" secondItem="FbL-za-rev" secondAttribute="centerY" id="0dk-Vu-eC1"/>
+                            <constraint firstItem="FbL-za-rev" firstAttribute="top" secondItem="sSW-wC-H61" secondAttribute="bottom" constant="-211" id="AMR-Ko-el1"/>
+                            <constraint firstAttribute="centerX" secondItem="FbL-za-rev" secondAttribute="centerX" id="Xqd-QP-Bx8"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0dk-Vu-eC1"/>
+                                <exclude reference="AMR-Ko-el1"/>
+                                <exclude reference="Xqd-QP-Bx8"/>
+                                <exclude reference="0A5-t1-dnK"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="0dk-Vu-eC1"/>
+                                <include reference="AMR-Ko-el1"/>
+                                <include reference="Xqd-QP-Bx8"/>
+                                <include reference="0A5-t1-dnK"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" tag="2" title="Social Feed" image="social-icon" id="UFv-h2-hIY"/>
                 </viewController>
@@ -373,8 +427,8 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
                         <outlet property="xyz" destination="W28-zg-YXA" id="ncX-dV-FXT"/>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="kJy-PD-CRY" kind="relationship" relationship="viewControllers" id="df6-7O-Xvr"/>
-                        <segue destination="P3A-B7-h4B" kind="relationship" relationship="viewControllers" id="Bzv-a8-i86"/>
                         <segue destination="gE5-Xi-cSM" kind="relationship" relationship="viewControllers" id="sWl-EG-SEJ"/>
+                        <segue destination="P3A-B7-h4B" kind="relationship" relationship="viewControllers" id="Bzv-a8-i86"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
