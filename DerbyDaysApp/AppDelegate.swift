@@ -28,6 +28,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return FBAppCall.handleOpenURL(url, sourceApplication:sourceApplication,
                 withSession:PFFacebookUtils.session())
     }
+    func imageFromColorforSizewithCornerRadius(color: UIColor, size: CGSize, radius: CGFloat) -> UIImage {
+        let rect = CGRectMake(0, 0, size.width, size.height)
+        UIGraphicsBeginImageContext(rect.size)
+        let context = UIGraphicsGetCurrentContext()
+        CGContextSetFillColorWithColor(context, color.CGColor)
+        CGContextFillRect(context, rect)
+        var image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        UIGraphicsBeginImageContext(size)
+        //    [[UIBezierPath bezierPathWithRoundedRect:rect cornerRadius:radius] addClip];
+        image.drawInRect(rect)
+        image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image
+    }
+
     
     func applicationDidBecomeActive(application: UIApplication) {
         FBAppCall.handleDidBecomeActiveWithSession(PFFacebookUtils.session())

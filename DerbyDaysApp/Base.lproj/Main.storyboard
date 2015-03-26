@@ -32,7 +32,7 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.62745098040000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="The Cause" id="s1b-Bz-a8k"/>
+                    <tabBarItem key="tabBarItem" tag="3" title="The Cause" image="cause-icon" id="s1b-Bz-a8k"/>
                     <connections>
                         <outlet property="info" destination="7PJ-Er-XnS" id="iCv-el-pZ7"/>
                     </connections>
@@ -77,7 +77,7 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.62745098039215685" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="2" title="Scoreboard" image="score-icon-small" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Scoreboard" image="score-icon-small" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="amount_raised" destination="vkJ-Pr-TNu" id="iob-bU-cDH"/>
                     </connections>
@@ -255,7 +255,7 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.62745098040000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Social Feed" id="UFv-h2-hIY"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="Social Feed" image="social-icon" id="UFv-h2-hIY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xea-Vi-kmR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -290,7 +290,7 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
         <scene sceneID="Kxx-24-cqJ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kJy-PD-CRY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Events" image="event-icon-small" id="Fni-6f-zQi"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Events" image="event-icon-small" id="Fni-6f-zQi"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Ea-MG-h83">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -310,11 +310,13 @@ SIGMA CHI'S GOAL FOR 2014/2015: RAISE $1 million dollars. Every dollar funds res
         <image name="Rectangle 3 + Login with Facebook" width="419" height="100"/>
         <image name="SIGMA CHI" width="298" height="156"/>
         <image name="amount_raised" width="414" height="268"/>
+        <image name="cause-icon" width="37" height="23"/>
         <image name="donate_now_button" width="419" height="100"/>
         <image name="event-icon-small" width="26" height="27"/>
         <image name="event_background" width="535" height="789"/>
         <image name="point_leaders_box" width="414" height="352"/>
         <image name="score-icon-small" width="26" height="31"/>
+        <image name="social-icon" width="37" height="23"/>
         <image name="view_photos" width="419" height="100"/>
     </resources>
 </document>

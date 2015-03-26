@@ -15,15 +15,18 @@ class TabBarViewController: UITabBarController{
         self.xyz.barTintColor = UIColor(red: 0.0/255.0, green: 137.0/255.0, blue: 218.0/255.0, alpha: 100.0/255.0)
         UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.whiteColor()], forState:.Normal)
         UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.whiteColor()], forState:.Selected)
+        self.xyz.tintColor = UIColor.whiteColor()
+        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        self.xyz.selectionIndicatorImage = appDelegate.imageFromColorforSizewithCornerRadius(UIColor(red: 0.0/255.0, green: 160.0/255.0, blue: 255.0/255.0, alpha: 255.0/255.0),size: CGSizeMake(95.0,49.0),radius: 0)
         for item in self.xyz.items as [UITabBarItem] {
             if let image = item.image {
                 item.image = image.imageWithColor(UIColor.whiteColor()).imageWithRenderingMode(.AlwaysOriginal)
             }
         }
         // Do any additional setup after loading the view.
+        self.xyz.selectedImageTintColor = UIColor.whiteColor()
     }
 
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
